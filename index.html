@@ -7,8 +7,120 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Witaj świecie!</h1>
-    <p>To jest moja pierwsza strona w VS Code.</p>
+   <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">Łukasz Duda</a>
+            <ul class="nav-menu">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="images/hero-image.svg" alt="Łukasz Duda" class="hero-image">
+                <h1>Bringing clarity<br>to product decisions.</h1>
+                <p class="hero-subtitle">Łukasz Duda</p>
+                <p class="hero-role">ux researcher & designer<br>product discovery specialist</p>
+                <a href="#contact" class="btn-primary">Skontaktuj się</a>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Some of my work and achievements</h2>
+            
+            <div class="portfolio-grid">
+                <a href="cs-experience-radar.html" class="portfolio-card">
+                    <img src="images/radar-cover.avif" alt="Experience radar case study">
+                    <h3>Experience radar</h3>
+                    <p>AI-powered user experience monitoring. <strong>Read more →</strong></p>
+                </a>
+                
+                <a href="cs-email-research.html" class="portfolio-card">
+                    <img src="images/research-cover.avif" alt="Email service research case study">
+                    <h3>Email service research</h3>
+                    <p>Overview of my research and analysis. <strong>Read more →</strong></p>
+                </a>
+                
+                <a href="cs-evaluation-method.html" class="portfolio-card">
+                    <img src="images/evaluation-cover.avif" alt="Evaluating design ideas case study">
+                    <h3>Evaluating design ideas</h3>
+                    <p>Research-based prioritization method. <strong>Read more →</strong></p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Few words about my skillset</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Research</h3>
+                    <p>I design and run continuous quantitative and qualitative research for products with a multi-million user base. I combine surveys, behavioral data, desk research, interviews and large-scale feedback analysis to uncover user problems and unmet needs. I translate insights into clear, actionable inputs for design and development, supporting confident product decisions.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>Design</h3>
+                    <p>I translate research insights into clear information architecture, UI design, and coherent user experiences. I design user flows and wireframes, and craft UX writing that supports clarity, accessibility and ease of use. Working closely with product and engineering teams, I simplify complex processes and reduce user friction.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>Strategy</h3>
+                    <p>I support product development through data-driven, user-centric decision-making. I analyze competitors, market trends and regulations, then provide new directions for development. I help teams prioritize initiatives through research, workshops and clear frameworks. My goal is to align user needs with business goals.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>Cross-disciplinary skills</h3>
+                    <p>I use behavioral economics to better understand user decisions and support more effective product choices. I'm highly proficient in Excel and have extensive experience with AI, which I use to organize and analyze data. I continuously learn new industry tools and practices, enjoy working closely with cross-functional teams and take full ownership of the tasks I'm responsible for.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="trusted">
+        <div class="container">
+            <h2>They trusted me</h2>
+            
+            <div class="logos-grid">
+                <img src="images/logo-wppoczta.png" alt="WP Poczta logo">
+                <img src="images/logo-o2poczta.png" alt="Poczta O2 logo">
+                <img src="images/logo-wpkonto.png" alt="WP Konto logo">
+                <img src="images/logo-superauto.png" alt="Superauto.pl logo">
+                <img src="images/logo-arris.png" alt="Arris agency logo">
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let's get in touch</h2>
+            <p class="contact-intro">Looking for an experienced researcher and designer? If you think I am a match for your team, feel free to contact me.</p>
+            
+            <div class="contact-methods">
+                <div class="contact-item">
+                    <p class="contact-label">Call me:</p>
+                    <a href="tel:+48539101507">+48 539 101 507</a>
+                </div>
+                
+                <div class="contact-item">
+                    <p class="contact-label">Mail me:</p>
+                    <a href="mailto:hello@lukaszduda.eu">hello@lukaszduda.eu</a>
+                </div>
+                
+                <div class="contact-item">
+                    <p class="contact-label">Text me:</p>
+                    <a href="https://www.linkedin.com/in/lukaux/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>Have a lovely day!<br>Łukasz Duda, 2026</p>
+        </div>
+    </footer>
      
     <script src="js/script.js"></script>
 </body>
