@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;600;700&family=Ysabeau+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Experience radar - Łukasz Duda</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Topbar -->
+    <nav class="navbar">
+        <div class="navbar-top">
+            <div class="container">
+                <a href="/" class="logo">Łukasz&nbsp;Duda</a>
+                
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="navbar-drawer" id="navbarDrawer">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="cs-experience-radar.html">Case&nbsp;study: Experience&nbsp;radar</a></li>
+                <li><a href="cs-email-research.html">Case&nbsp;study: Email&nbsp;service&nbsp;research</a></li>
+                <li><a href="cs-evaluation-method.html">Case&nbsp;study: Evaluating&nbsp;design&nbsp;ideas</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Case Study -->
+    <section class="case-hero">
+        <img src="images/radar-cover.avif" alt="Experience radar cover" class="case-hero-image">
+        <hr class="case-hero-line">
+        <div class="container">
+            <h1 class="case-title">
+                <span class="reveal-line">Experience&nbsp;radar</span>
+            </h1>
+            <p class="case-subtitle">
+                <span class="reveal-line">AI-powered user&nbsp;experience&nbsp;monitoring</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Context & Key achievements -->
+    <section class="case-intro">
+        <div class="container">
+            <div class="case-intro-grid">
+                <div class="case-context" data-aos="fade-up">
+                    <h2>Context</h2>
+                    <p>Within the&nbsp;project team, we&nbsp;wanted to&nbsp;deepen our&nbsp;understanding of&nbsp;users' problems and&nbsp;needs. We&nbsp;needed a&nbsp;research tool that&nbsp;would allow us&nbsp;to&nbsp;continuously monitor user&nbsp;opinions about the&nbsp;service and&nbsp;support both business and&nbsp;product&nbsp;decisions. In&nbsp;response, I&nbsp;initiated a&nbsp;project of&nbsp;periodic quantitative and&nbsp;qualitative research, supported by&nbsp;AI.</p>
+                </div>
+                
+                <div class="case-achievements" data-aos="fade-up" data-aos-delay="100">
+                    <h2>Key achievements</h2>
+                    <ul>
+                        <li>I&nbsp;detected dozens of&nbsp;changes in&nbsp;users&nbsp;experience.</li>
+                        <li>I&nbsp;identified key&nbsp;user problems and&nbsp;unmet&nbsp;needs.</li>
+                        <li>I&nbsp;discovered 100+ improvement ideas and&nbsp;turned them into&nbsp;design&nbsp;tasks.</li>
+                        <li>I&nbsp;discovered 50+ technical issues and&nbsp;turned them into&nbsp;developer-ready&nbsp;tasks.</li>
+                        <li>I&nbsp;introduced 58&nbsp;valuable UX&nbsp;metrics tied to&nbsp;real user&nbsp;feedback.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="case-process">
+        <div class="container">
+            <h2 data-aos="fade-up">Process</h2>
+            
+            <!-- Data collection -->
+            <div class="process-item" data-aos="fade-up">
+                <div class="process-content">
+                    <h3>Data collection</h3>
+                    <p>The first step was&nbsp;to&nbsp;collect as&nbsp;much user&nbsp;feedback as&nbsp;possible. I&nbsp;identified and&nbsp;connected multiple sources, including customer support tickets, surveys, and&nbsp;app store&nbsp;reviews. To&nbsp;increase the&nbsp;diversity of&nbsp;insights, I&nbsp;introduced additional survey-based research. I&nbsp;worked closely with&nbsp;customer support and&nbsp;development teams to&nbsp;ensure a&nbsp;continuous and&nbsp;reliable data&nbsp;flow. As&nbsp;a&nbsp;result, the&nbsp;system now&nbsp;processes approximately 20,000&nbsp;user opinions per&nbsp;month.</p>
+                </div>
+                <div class="process-image">
+                    <img src="images/cs-radar-1.avif" alt="Data collection scheme">
+                </div>
+            </div>
+
+            <!-- Defining research categories -->
+            <div class="process-item process-item-reverse" data-aos="fade-up">
+                <div class="process-image">
+                    <img src="images/cs-radar-2.avif" alt="Research categories scheme">
+                </div>
+                <div class="process-content">
+                    <h3>Defining research categories</h3>
+                    <p>The collected data had&nbsp;to&nbsp;be&nbsp;structured into&nbsp;research categories. I&nbsp;used the&nbsp;Umami method and&nbsp;card sorting to&nbsp;develop a&nbsp;clear metadata structure. I&nbsp;selected 51&nbsp;topics users talk&nbsp;about (e.g.&nbsp;login, reading the&nbsp;interface, communication). These topics were grouped into&nbsp;6&nbsp;types of&nbsp;feedback, such as&nbsp;issues, praise, or&nbsp;lack of&nbsp;information on&nbsp;a&nbsp;given&nbsp;topic.</p>
+                </div>
+            </div>
+
+            <!-- Data security -->
+            <div class="process-item" data-aos="fade-up">
+                <div class="process-content">
+                    <h3>Data security</h3>
+                    <p>Before using AI&nbsp;to&nbsp;categorize user&nbsp;feedback, I&nbsp;ensured user&nbsp;data was&nbsp;properly protected. In&nbsp;collaboration with&nbsp;the&nbsp;backend team, we&nbsp;created a&nbsp;simple anonymization tool. The&nbsp;program removes names, surnames, email&nbsp;addresses, and&nbsp;phone numbers from&nbsp;the&nbsp;data.</p>
+                </div>
+                <div class="process-image">
+                    <img src="images/cs-radar-3.avif" alt="Data anonymization example">
+                </div>
+            </div>
+
+            <!-- AI automation -->
+            <div class="process-item process-item-reverse" data-aos="fade-up">
+                <div class="process-image">
+                    <img src="images/cs-radar-4.avif" alt="AI automation scheme">
+                </div>
+                <div class="process-content">
+                    <h3>AI automation</h3>
+                    <p>The volume of&nbsp;user feedback made manual analysis impossible. Together with&nbsp;developers, we&nbsp;used Make to&nbsp;connect Google&nbsp;Sheets with&nbsp;OpenAI. When prepared user&nbsp;comments are&nbsp;uploaded to&nbsp;the&nbsp;table, the&nbsp;tool automatically assigns research categories. After several experiments, I&nbsp;developed a&nbsp;prompt that&nbsp;reliably classifies feedback into&nbsp;the&nbsp;correct&nbsp;categories.</p>
+                </div>
+            </div>
+
+            <!-- Reporting -->
+            <div class="process-item" data-aos="fade-up">
+                <div class="process-content">
+                    <h3>Reporting</h3>
+                    <p>I&nbsp;publish the&nbsp;analyzed data in&nbsp;a&nbsp;monthly report. The&nbsp;report shows which problems and&nbsp;needs users&nbsp;have, broken down by&nbsp;service version (Web, Android, iOS). It&nbsp;highlights the&nbsp;ratio of&nbsp;identified issues relative to&nbsp;MAU, presents trends from&nbsp;the&nbsp;last six&nbsp;months, and&nbsp;describes the&nbsp;most important&nbsp;insights.</p>
+                </div>
+                <div class="process-image">
+                    <img src="images/cs-radar-5.avif" alt="Monthly report screenshot">
+                </div>
+            </div>
+
+            <!-- Creating tasks -->
+            <div class="process-item process-item-reverse" data-aos="fade-up">
+                <div class="process-image">
+                    <img src="images/cs-radar-6.avif" alt="Workshop board for task identification">
+                </div>
+                <div class="process-content">
+                    <h3>Creating tasks for the team</h3>
+                    <p>An additional value of&nbsp;working with&nbsp;user feedback is&nbsp;identifying small improvement tasks within the&nbsp;service. I&nbsp;extract comments that&nbsp;indicate potential interface issues. These topics are&nbsp;regularly discussed with&nbsp;the&nbsp;product team, and&nbsp;together we&nbsp;create tasks to&nbsp;address them. As&nbsp;a&nbsp;result, we&nbsp;delivered over a&nbsp;hundred quick-win tasks to&nbsp;the&nbsp;backlog.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- See also -->
+    <section class="case-see-also">
+        <div class="container">
+            <h2 data-aos="fade-up">See also</h2>
+            
+            <div class="see-also-grid">
+                <a href="cs-email-research.html" class="portfolio-card" data-aos="fade-up" data-aos-delay="0">
+                    <img src="images/research-cover.avif" alt="Email service research">
+                    <h3>Email&nbsp;service&nbsp;research</h3>
+                    <p>Overview of&nbsp;my research and&nbsp;analysis. <strong>Read&nbsp;more&nbsp;→</strong></p>
+                </a>
+                
+                <a href="cs-evaluation-method.html" class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/evaluation-cover.avif" alt="Evaluating design ideas">
+                    <h3>Evaluating&nbsp;design&nbsp;ideas</h3>
+                    <p>Research-based prioritization&nbsp;method. <strong>Read&nbsp;more&nbsp;→</strong></p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-aos="fade-up">Let's get in&nbsp;touch</h2>
+            <p class="contact-intro" data-aos="fade-up" data-aos-delay="100">Looking for&nbsp;an experienced researcher and&nbsp;designer? If&nbsp;you think I&nbsp;am a&nbsp;match for&nbsp;your team, feel free to&nbsp;contact&nbsp;me.</p>
+            
+            <div class="contact-methods" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-item">
+                    <p class="contact-label">Call&nbsp;me:</p>
+                    <a href="tel:+48539101507">+48&nbsp;539&nbsp;101&nbsp;507</a>
+                </div>
+                
+                <div class="contact-item">
+                    <p class="contact-label">Mail&nbsp;me:</p>
+                    <a href="mailto:hello@lukaszduda.eu">hello@lukaszduda.eu</a>
+                </div>
+                
+                <div class="contact-item">
+                    <p class="contact-label">Text&nbsp;me:</p>
+                    <a href="https://www.linkedin.com/in/lukaux/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-aos="fade-up">Have a&nbsp;lovely&nbsp;day!<br>Łukasz&nbsp;Duda, 2026</p>
+        </div>
+    </footer>
+    
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img src="" alt="" id="lightbox-img">
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 400,
+            easing: 'ease-out',
+            once: true,
+            offset: 50
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

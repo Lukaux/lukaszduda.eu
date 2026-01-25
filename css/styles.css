@@ -8,8 +8,6 @@
     --gold-8: #222007;
     --silver-96: #F5F5F5;
     --silver-64: #A2A4A4;
-    --silver-40: #656767;
-    --silver-24: #3D3E3E;
     --silver-8: #141515;
 }
 
@@ -49,6 +47,17 @@ a {
 section h2 {
     margin-top: 80px;
     margin-bottom: 40px;
+}
+
+.portfolio h2,
+.about h2,
+.trusted h2,
+.contact h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--silver-8);
+    text-align: left;
 }
 
 /* Nawigacja */
@@ -100,7 +109,7 @@ section h2 {
     font-weight: 500;
     line-height: 100%;
     color: var(--silver-8);
-    transition: all 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .logo:hover {
@@ -184,7 +193,7 @@ section h2 {
     font-size: 24px;
     font-weight: 500;
     line-height: 100%;
-    transition: all 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     height: 64px;
     display: flex;
     align-items: center;
@@ -201,7 +210,7 @@ section h2 {
 /* Sekcja Hero - nowy layout */
 .hero {
     padding: 62px 0 0 0;
-    background: var(--gold-96);
+    background: linear-gradient(225deg, var(--gold-96) 0%, var(--gold-88) 100%);
     border-bottom: 2px solid var(--silver-64);
 }
 
@@ -285,7 +294,7 @@ section h2 {
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
-    transition: all 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     text-transform: none;
     white-space: nowrap;
     width: 152px;
@@ -302,15 +311,30 @@ section h2 {
     box-shadow: 6px 6px 0px 0px var(--silver-8);
 }
 
-/* Sekcja Portfolio */
-.portfolio h2 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 120%;
-    color: var(--silver-8);
-    text-align: left;
+/* Smooth reveal animation dla Hero h1 */
+.reveal-line {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: revealText 0.8s ease-out forwards;
 }
 
+.reveal-line:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.case-subtitle .reveal-line {
+    animation-delay: 0.4s;
+}
+
+@keyframes revealText {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sekcja Portfolio */
 .portfolio-grid {
     display: flex;
     flex-wrap: wrap;
@@ -320,7 +344,7 @@ section h2 {
 .portfolio-card {
     background: var(--gold-96);
     overflow: hidden;
-    transition: all 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     box-shadow: 4px 4px 0px 0px var(--silver-8);
     width: 376px;
     height: 357.5px;
@@ -367,14 +391,6 @@ section h2 {
 }
 
 /* Sekcja About */
-.about h2 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 120%;
-    color: var(--silver-8);
-    text-align: left;
-}
-
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -405,14 +421,6 @@ section h2 {
 }
 
 /* Sekcja Trusted */
-.trusted h2 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 120%;
-    color: var(--silver-8);
-    text-align: left;
-}
-
 .logos-grid {
     display: flex;
     flex-wrap: wrap;
@@ -434,12 +442,6 @@ section h2 {
 .logos-grid img {
     height: 32px;
     width: auto;
-    opacity: 0.6;
-    transition: opacity 0.3s;
-}
-
-.logos-grid img:hover {
-    opacity: 1;
 }
 
 .logos-grid img:last-child {
@@ -447,15 +449,6 @@ section h2 {
 }
 
 /* Sekcja Contact */
-.contact h2 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 120%;
-    color: var(--silver-8);
-    margin-bottom: 20px;
-    text-align: left;
-}
-
 .contact-intro {
     text-align: left;
     max-width: 100%;
@@ -488,7 +481,7 @@ section h2 {
     font-size: 20px;
     font-weight: 700;
     color: var(--silver-8);
-    transition: all 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     margin-left: 8px;
     line-height: 1.5;
 }
@@ -513,36 +506,476 @@ section h2 {
 }
 
 /* Czcionka SC tylko w Hero */
-.hero-subtitle,
 .hero-role {
     font-family: 'Ysabeau SC', sans-serif;
 }
 
+/* Case Study Styles */
+
+/* Hero case study */
+.case-hero {
+    padding: 40px 0 48px 0;
+    background: var(--gold-96);
+    border-bottom: 2px solid var(--silver-64);
+}
+
+.case-hero-image {
+    width: auto;
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+.case-hero-line {
+    border: none;
+    border-top: 2px solid var(--silver-8);
+    margin: 0 auto;
+    max-width: 1194px;
+}
+
+.case-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.case-subtitle {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+}
+
+/* Context & Key achievements */
+.case-intro-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.case-context h2,
+.case-achievements h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+
+.case-context p {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.case-achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
+.case-achievements li {
+    font-size: 20px;
+    line-height: 150%;
+    padding-left: 20px;
+    position: relative;
+}
+
+.case-achievements li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+}
+
+/* Process section */
+.case-process h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+
+.process-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 64px;
+    align-items: start;
+}
+
+.process-item:last-child {
+    margin-bottom: 0;
+}
+
+.process-item-reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.process-item-reverse .process-content {
+    order: 2;
+}
+
+.process-item-reverse .process-image {
+    order: 1;
+}
+
+.process-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--silver-8);
+    margin-bottom: 24px;
+}
+
+.process-content p {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.process-image img {
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 0px 0px var(--silver-8);
+    transition: background 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.process-image img:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px 0px var(--silver-8);
+}
+
+/* See also section */
+.case-see-also h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--silver-8);
+    margin-bottom: 40px;
+}
+
+.see-also-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: flex-start;
+}
+
+.see-also-grid .portfolio-card {
+    width: 376px;
+    flex-shrink: 0;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: none;
+    cursor: default;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    font-weight: 300;
+    transition: color 0.2s;
+}
+
+.lightbox-close:hover {
+    color: var(--gold-56);
+}
+
 /* Responsywność - tablet i mobile */
-@media (max-width: 768px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr;
+@media (max-width: 669px) {
+    .container {
+    max-width: 669px;
     }
     
-    .skills-grid {
-        grid-template-columns: 1fr;
+    section h2 {
+    margin-top: 40px;
+    margin-bottom: 24px;
     }
-    
-    .logos-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+
+    .portfolio h2,
+    .about h2,
+    .trusted h2,
+    .contact h2 {
+    font-size: 32px;
     }
-    
-    .contact-methods {
-        grid-template-columns: 1fr;
-        gap: 30px;
+
+    .navbar-top {
+    height: 56px;
     }
-    
-    .hero h1 {
-        font-size: 36px;
+
+    .navbar-drawer {
+    top: 56px;
     }
-    
+
+    .logo {
+    font-size: 20px;
+    }
+
     .nav-menu {
-        gap: 15px;
+    padding: 0 0 16px 0;
+    }
+
+    .nav-menu a {
+    font-size: 20px;
+    height: 56px;
+    }
+
+    .hero {
+    padding: 40px 0 0 0;
+    }
+    
+    .hero-top {
+    margin: 0;
+    max-width: 100%;
+    gap: 24px;
+    }
+
+    .hero-image {
+    width: 152px;
+    }
+
+    .hero-top h1 {
+    font-size: 32px;
+    width: 152px;
+    }
+
+    .hero-line {
+    margin: 0 auto 24px auto;
+    }
+
+    .hero-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-bottom: 16px;
+    gap: 24px;
+    }
+
+    .hero-name {
+    font-size: 24px;
+    }
+
+    .hero-role {
+    font-size: 24px;
+    }
+
+    .hero-specialty {
+    font-size: 24px;
+    }
+
+    .btn-primary {
+    font-size: 20px;
+    width: 132px;
+    height: 40px;
+    }
+
+    .portfolio h2 {
+    font-size: 32px;
+    }
+
+    .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    }
+
+    .portfolio-card {
+    max-width: 400px;
+    height: auto;
+    }
+
+    .portfolio-card h3 {
+    font-size: 24px;
+    }
+
+    .portfolio-card p {
+    font-size: 16px;
+    }
+
+    .portfolio-card p strong {
+    font-size: 16px;
+    }
+    
+    .about h2 {
+    font-size: 32px;
+    }
+
+    .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    }
+
+    .skill-card h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    }
+
+    .skill-card p {
+    font-size: 16px;
+    }
+
+    .trusted h2 {
+    font-size: 32px;
+    }
+
+    .logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    }
+
+    .logos-grid img {
+    height: 24px;
+    }
+    
+    .logos-grid img:last-child {
+    height: 16px;
+    }
+
+    .contact h2 {
+    font-size: 32px;
+    margin-bottom: 0px;
+    }
+
+    .contact-intro {
+    font-size: 16px;
+    margin: 24px 0 16px 0;
+    }
+
+    .contact-methods {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    }
+
+    .contact-item {
+    margin-bottom: 8px;
+    }
+
+    .contact-label {
+    font-size: 16px;
+    }
+
+    .contact-item a {
+    font-size: 16px;
+    margin-bottom: 0px;
+    }
+
+    .footer p {
+    font-size: 16px;
+    margin-top: 0px;
+    }
+
+    .case-hero {
+    padding: 0 0 24px 0;
+    }
+
+    .case-hero-image {
+    width: 100vw;
+    max-width: none;
+    }
+
+    .case-title {
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    }
+
+    .case-subtitle {
+    font-size: 24px;
+    }
+
+    .case-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 64px;
+    }
+
+    .case-context h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    margin-top: 64px;
+    }
+
+    .case-achievements h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    margin-top: 0px;
+    }
+
+    .case-context p {
+    font-size: 16px;
+    }
+
+    .case-achievements li {
+    font-size: 16px;
+    }
+
+    .case-process h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    margin-top: 64px;
+    }
+
+    .process-item,
+    .process-item-reverse {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+    }
+
+    .process-item-reverse .process-content {
+    order: 1;
+    }
+
+    .process-item-reverse .process-image {
+    order: 2;
+    }
+
+    .process-content h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    }
+
+    .process-content p {
+    font-size: 16px;
+    line-height: 150%;
+    }
+
+    .case-see-also h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    margin-top: 64px;
+    }
+
+    .see-also-grid {
+    flex-direction: column;
+    }
+
+    .see-also-grid .portfolio-card {
+    width: 100%;
+    max-width: 100%;
     }
 }

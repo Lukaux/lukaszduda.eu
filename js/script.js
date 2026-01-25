@@ -1,9 +1,8 @@
 // Hamburger menu
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('navMenu');
-    
     const navbarDrawer = document.getElementById('navbarDrawer');
+    const navMenu = document.getElementById('navMenu');
     
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
@@ -50,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const currentScroll = window.pageYOffset;
         
         // Jeśli menu jest otwarte, nie chowaj topbara
-        if (navMenu.classList.contains('active')) {
+        if (navbarDrawer.classList.contains('active')) {
             return;
         }
         
@@ -69,4 +68,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     console.log('Portfolio Łukasza Dudy - strona załadowana!');
+
+    // Lightbox dla zdjęć w case study
+    const processImages = document.querySelectorAll('.process-image img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+    
+    if (processImages.length > 0) {
+        processImages.forEach(img => {
+            img.addEventListener('click', function() {
+                lightbox.classList.add('active');
+                lightboxImg.src = this.src;
+                lightboxImg.alt = this.alt;
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        // Zamknij lightbox
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox || e.target === lightboxClose) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Zamknij na ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
 });
