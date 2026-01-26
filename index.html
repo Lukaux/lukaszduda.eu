@@ -3,6 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="fav-icon-lukaux.svg">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="UX researcher & designer specializing in product discovery. Portfolio of research projects and case studies.">
+    <meta name="keywords" content="UX researcher, UX designer, product discovery, user research, portfolio, Łukasz Duda">
+    <meta name="author" content="Łukasz Duda">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lukaszduda.eu/">
+    <meta property="og:title" content="Łukasz Duda - UX researcher & designer">
+    <meta property="og:description" content="UX researcher & designer specializing in product discovery. Portfolio of research projects and case studies.">
+    <meta property="og:image" content="https://lukaszduda.eu/images/hero-image.svg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lukaszduda.eu/">
+    <meta property="twitter:title" content="Łukasz Duda - UX researcher & designer">
+    <meta property="twitter:description" content="UX researcher & designer specializing in product discovery. Portfolio of research projects and case studies.">
+    <meta property="twitter:image" content="https://lukaszduda.eu/images/hero-image.svg">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;600;700&family=Ysabeau+SC:wght@400;600;700&display=swap" rel="stylesheet">
@@ -18,7 +41,7 @@
             <div class="container">
                 <a href="/" class="logo">Łukasz&nbsp;Duda</a>
                 
-                <button class="hamburger" id="hamburger">
+                <button class="hamburger" id="hamburger" data-umami-event="menu-open">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -54,7 +77,7 @@
                     <p class="hero-role">ux&nbsp;researcher&nbsp;&amp;&nbsp;designer</p>
                     <p class="hero-specialty">product&nbsp;discovery&nbsp;specialist</p>
                 </div>
-                <a href="#contact" class="btn-primary">Contact&nbsp;me</a>
+                <a href="#contact" class="btn-primary" data-umami-event="hero-contact">Contact&nbsp;me</a>
             </div>
         </div>
     </section>
@@ -64,21 +87,21 @@
             <h2 data-aos="fade-up">Some of&nbsp;my work and&nbsp;achievements</h2>
             
             <div class="portfolio-grid">
-                <a href="cs-experience-radar.html" class="portfolio-card" data-aos="fade-up" data-aos-delay="0">
+                <a href="cs-experience-radar.html" class="portfolio-card" data-aos="fade-up" data-aos-delay="0" data-umami-event="portfolio-card-radar">
                     <img src="images/radar-cover.avif" alt="Experience radar case study">
                     <div class="card-overlay"></div>
                     <h3>Experience&nbsp;radar</h3>
                     <p>AI-powered user&nbsp;experience monitoring. <strong>Read&nbsp;more&nbsp;→</strong></p>
                 </a>
                 
-                <a href="cs-email-research.html" class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+                <a href="cs-email-research.html" class="portfolio-card" data-aos="fade-up" data-aos-delay="100" data-umami-event="portfolio-card-email">
                     <img src="images/research-cover.avif" alt="Email service research case study">
                     <div class="card-overlay"></div>
                     <h3>Email&nbsp;service&nbsp;research</h3>
                     <p>Overview of&nbsp;my research and&nbsp;analysis. <strong>Read&nbsp;more&nbsp;→</strong></p>
                 </a>
                 
-                <a href="cs-evaluation-method.html" class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
+                <a href="cs-evaluation-method.html" class="portfolio-card" data-aos="fade-up" data-aos-delay="200" data-umami-event="portfolio-card-evaluation">
                     <img src="images/evaluation-cover.avif" alt="Evaluating design ideas case study">
                     <div class="card-overlay"></div>
                     <h3>Evaluating&nbsp;design&nbsp;ideas</h3>
@@ -140,17 +163,17 @@
             <div class="contact-methods" data-aos="fade-up" data-aos-delay="200">
                 <div class="contact-item">
                     <p class="contact-label">Call&nbsp;me:</p>
-                    <a href="tel:+48539101507">+48&nbsp;539&nbsp;101&nbsp;507</a>
+                    <a href="tel:+48539101507" data-umami-event="contact-phone">+48&nbsp;539&nbsp;101&nbsp;507</a>
                 </div>
                 
                 <div class="contact-item">
                     <p class="contact-label">Mail&nbsp;me:</p>
-                    <a href="mailto:hello@lukaszduda.eu">hello@lukaszduda.eu</a>
+                    <a href="mailto:hello@lukaszduda.eu" data-umami-event="contact-email">hello@lukaszduda.eu</a>
                 </div>
                 
                 <div class="contact-item">
                     <p class="contact-label">Text&nbsp;me:</p>
-                    <a href="https://www.linkedin.com/in/lukaux/" target="_blank">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/lukaux/" target="_blank" data-umami-event="contact-linkedin">LinkedIn</a>
                 </div>
             </div>
         </div>
