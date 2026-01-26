@@ -344,7 +344,7 @@ section h2 {
 .portfolio-card {
     background: var(--gold-96);
     overflow: hidden;
-    transition: background 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     box-shadow: 4px 4px 0px 0px var(--silver-8);
     width: 376px;
     height: 357.5px;
