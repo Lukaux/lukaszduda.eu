@@ -356,6 +356,7 @@ section h2 {
     transform: translate(-2px, -2px) !important;
     box-shadow: 6px 6px 0px 0px var(--silver-8);
     background: var(--gold-88);
+    transition: all 0.2s ease-in-out !important;
 }
 
 .portfolio-card img {
