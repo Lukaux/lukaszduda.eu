@@ -809,6 +809,7 @@ section h2 {
 
     .portfolio-card {
     max-width: 400px;
+    width: 100%;
     height: auto;
     }
 
