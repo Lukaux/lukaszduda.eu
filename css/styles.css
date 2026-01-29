@@ -37,14 +37,14 @@ a {
     color: inherit;
 }
 
-/* Container - ogranicza szerokoÅ›Ä‡ treÅ›ci */
+/* Container - ogranicza szerokoÃ…â€ºÃ„â€¡ treÃ…â€ºci */
 .container {
     max-width: 1226px;
     margin: 0 auto;
     padding: 0 16px;
 }
 
-/* Globalne style dla nagÅ‚Ã³wkÃ³w h2 w sekcjach */
+/* Globalne style dla nagÃ…â€šÃƒÂ³wkÃƒÂ³w h2 w sekcjach */
 section h2 {
     margin-top: 80px;
     margin-bottom: 40px;
@@ -397,7 +397,7 @@ section h2 {
 /* Sekcja About */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 }
 
@@ -422,6 +422,23 @@ section h2 {
     font-weight: 400;
     line-height: 150%;
     color: var(--silver-8);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.skill-tags span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--silver-8);
+    background: var(--gold-88);
+    padding: 6px 12px;
+    border: 1px solid var(--silver-64);
 }
 
 /* Sekcja Trusted */
@@ -585,7 +602,7 @@ section h2 {
 }
 
 .case-achievements li::before {
-    content: "•";
+    content: "â€¢";
     position: absolute;
     left: 0;
     font-size: 16px;
@@ -711,7 +728,7 @@ section h2 {
     color: var(--gold-56);
 }
 
-/* ResponsywnoÅ›Ä‡ - tablet i mobile */
+/* ResponsywnoÃ…â€ºÃ„â€¡ - tablet i mobile */
 @media (max-width: 669px) {
     .container {
     max-width: 669px;
@@ -843,6 +860,15 @@ section h2 {
 
     .skill-card p {
     font-size: 16px;
+    }
+
+    .skill-tags {
+    margin-top: 12px;
+    }
+
+    .skill-tags span {
+    font-size: 12px;
+    padding: 4px 8px;
     }
 
     .trusted h2 {
