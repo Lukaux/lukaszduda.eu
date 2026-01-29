@@ -93,7 +93,7 @@ section h2 {
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
     z-index: 101;
-    border-bottom: 2px solid var(--silver-64);
+    border-bottom: 2px solid var(--silver-8);
 }
 
 .navbar-drawer.active {
@@ -212,7 +212,7 @@ section h2 {
 .hero {
     padding: 62px 0 0 0;
     background: linear-gradient(225deg, var(--gold-96) 0%, var(--gold-88) 100%);
-    border-bottom: 2px solid var(--silver-64);
+    border-bottom: 2px solid var(--silver-8);
 }
 
 .hero-top {
@@ -437,7 +437,7 @@ section h2 {
     line-height: 100%;
     background: var(--gold-96);
     padding: 6px 12px;
-    border: 1px solid var(--silver-64);
+    border: 1px solid var(--silver-8);
 }
 
 /* Sekcja Trusted */
@@ -452,8 +452,8 @@ section h2 {
 
 .logos-container {
     background: var(--gold-96);
-    border-top: 2px solid var(--silver-64);
-    border-bottom: 2px solid var(--silver-64);
+    border-top: 2px solid var(--silver-8);
+    border-bottom: 2px solid var(--silver-8);
     padding: 40px 16px;
     margin: 0 auto;
     max-width: 1194px;
