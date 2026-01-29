@@ -212,6 +212,7 @@ section h2 {
     padding: 62px 0 0 0;
     background: linear-gradient(225deg, var(--gold-96) 0%, var(--gold-88) 100%);
     border-bottom: 2px solid var(--silver-64);
+    width: 100%;
 }
 
 .hero-top {
