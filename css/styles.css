@@ -351,8 +351,9 @@ section h2 {
     height: 357.5px;
 }
 
-.portfolio-card:hover {
-    transform: translate(-2px, -2px);
+.portfolio-card:hover,
+.portfolio-card[data-aos]:hover {
+    transform: translate(-2px, -2px) !important;
     box-shadow: 6px 6px 0px 0px var(--silver-8);
     background: var(--gold-88);
 }
