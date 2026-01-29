@@ -23,6 +23,7 @@ body {
     line-height: 1.5;
     color: var(--silver-8);
     background: var(--silver-96);
+    overflow-x: hidden;
 }
 
 img {
@@ -751,6 +752,7 @@ section h2 {
 
     .hero {
     padding: 40px 0 0 0;
+    width: 100%;
     }
     
     .hero-top {
@@ -808,7 +810,8 @@ section h2 {
     }
 
     .portfolio-card {
-    max-width: 400px;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     }
 
