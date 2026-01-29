@@ -437,8 +437,7 @@ section h2 {
     line-height: 100%;
     background: var(--gold-96);
     padding: 6px 12px;
-    border-top: 1px solid var(--silver-64);
-    border-bottom: 1px solid var(--silver-64);
+    border: 1px solid var(--silver-64);
 }
 
 /* Sekcja Trusted */
