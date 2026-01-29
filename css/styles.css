@@ -536,7 +536,7 @@ section h2 {
 .case-hero {
     padding: 40px 0 48px 0;
     background: var(--gold-96);
-    border-bottom: 2px solid var(--silver-64);
+    border-bottom: 2px solid var(--silver-8);
 }
 
 .case-hero-image {
@@ -866,7 +866,7 @@ section h2 {
     }
 
     .skill-tags span {
-    font-size: 12px;
+    font-size: 14px;
     padding: 4px 8px;
     }
 
