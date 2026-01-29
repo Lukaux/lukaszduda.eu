@@ -36,14 +36,14 @@ a {
     color: inherit;
 }
 
-/* Container - ogranicza szerokość treści */
+/* Container - ogranicza szerokoÅ›Ä‡ treÅ›ci */
 .container {
     max-width: 1226px;
     margin: 0 auto;
     padding: 0 16px;
 }
 
-/* Globalne style dla nagłówków h2 w sekcjach */
+/* Globalne style dla nagÅ‚Ã³wkÃ³w h2 w sekcjach */
 section h2 {
     margin-top: 80px;
     margin-bottom: 40px;
@@ -342,6 +342,7 @@ section h2 {
 }
 
 .portfolio-card {
+    display: block;
     background: var(--gold-96);
     overflow: hidden;
     transition: all 0.2s ease-in-out;
@@ -581,7 +582,7 @@ section h2 {
 }
 
 .case-achievements li::before {
-    content: "•";
+    content: "â€¢";
     position: absolute;
     left: 0;
     font-size: 16px;
@@ -707,7 +708,7 @@ section h2 {
     color: var(--gold-56);
 }
 
-/* Responsywność - tablet i mobile */
+/* ResponsywnoÅ›Ä‡ - tablet i mobile */
 @media (max-width: 669px) {
     .container {
     max-width: 669px;
