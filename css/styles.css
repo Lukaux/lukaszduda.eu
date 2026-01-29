@@ -212,7 +212,6 @@ section h2 {
     padding: 62px 0 0 0;
     background: linear-gradient(225deg, var(--gold-96) 0%, var(--gold-88) 100%);
     border-bottom: 2px solid var(--silver-64);
-    width: 100%;
 }
 
 .hero-top {
@@ -585,7 +584,7 @@ section h2 {
 }
 
 .case-achievements li::before {
-    content: "â€¢";
+    content: "•";
     position: absolute;
     left: 0;
     font-size: 16px;
@@ -810,7 +809,6 @@ section h2 {
 
     .portfolio-card {
     max-width: 400px;
-    width: 100%;
     height: auto;
     }
 
