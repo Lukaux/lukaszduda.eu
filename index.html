@@ -1,223 +1,770 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="7TPYBu2nMzFQSK2-U8uItyyzrpZFDNQ846prTcYnj2Q">
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="images/fav-icon-lukaux.svg">
-    
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- Performance hints -->
+    <link rel="preload" href="fonts/ysabeau-sc-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ysabeau-sc-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preconnect" href="https://cloud.umami.is" crossorigin>
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="UX researcher & designer specializing in product discovery. Portfolio of research projects and case studies.">
-    <meta name="keywords" content="UX researcher, UX designer, product discovery, user research, portfolio, Łukasz Duda">
+    <meta name="description" content="Łukasz Duda — Senior UX Researcher i specjalista Product Discovery & AI. Buduję systemy decyzyjne, automatyzuję procesy badawcze i wdrażam rozwiązania AI w produktach z wielomilionową bazą użytkowników." data-en="Łukasz Duda — Senior UX Researcher and Product Discovery & AI specialist. I build decision-making systems, automate research processes, and deploy AI solutions in products with a multi-million user base.">
     <meta name="author" content="Łukasz Duda">
-    
-    <link rel="canonical" href="https://lukaszduda.eu/">
+
+    <link rel="canonical" href="https://www.lukaszduda.eu/">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://www.lukaszduda.eu/#person",
+                "name": "Łukasz Duda",
+                "url": "https://www.lukaszduda.eu/",
+                "image": "https://www.lukaszduda.eu/images/hero-image.svg",
+                "jobTitle": "Senior UX Researcher | Product Discovery & AI",
+                "description": "Senior UX Researcher i specjalista Product Discovery & AI. Buduję systemy decyzyjne, automatyzuję procesy badawcze i wdrażam rozwiązania AI w produktach z wielomilionową bazą użytkowników.",
+                "knowsAbout": [
+                    "UX Research",
+                    "Product Discovery",
+                    "Artificial Intelligence",
+                    "Retrieval-Augmented Generation",
+                    "Prompt Engineering",
+                    "Quantitative Research",
+                    "Qualitative Research",
+                    "Data Analysis",
+                    "Product Strategy",
+                    "User Experience Design"
+                ],
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Wirtualna Polska"
+                },
+                "sameAs": ["https://www.linkedin.com/in/lukaux/"]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://www.lukaszduda.eu/#website",
+                "url": "https://www.lukaszduda.eu/",
+                "name": "Łukasz Duda — Senior UX Researcher | Product Discovery & AI",
+                "inLanguage": "pl-PL",
+                "publisher": { "@id": "https://www.lukaszduda.eu/#person" }
+            },
+            {
+                "@type": "ProfessionalService",
+                "name": "Łukasz Duda — Senior UX Researcher | Product Discovery & AI",
+                "url": "https://www.lukaszduda.eu/",
+                "description": "Łukasz Duda — Senior UX Researcher i specjalista Product Discovery & AI. Buduję systemy decyzyjne, automatyzuję procesy badawcze i wdrażam rozwiązania AI w produktach z wielomilionową bazą użytkowników.",
+                "areaServed": "PL",
+                "provider": { "@id": "https://www.lukaszduda.eu/#person" }
+            }
+        ]
+    }
+    </script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lukaszduda.eu/">
-    <meta property="og:title" content="Łukasz Duda - UX researcher & designer">
-    <meta property="og:description" content="UX researcher & designer specializing in product discovery. Portfolio of research projects and case studies.">
-    <meta property="og:image" content="https://lukaszduda.eu/images/hero-image.svg">
-    
+    <meta property="og:url" content="https://www.lukaszduda.eu/">
+    <meta property="og:title" content="Łukasz Duda — Senior UX Researcher | Product Discovery & AI">
+    <meta property="og:description" content="Łukasz Duda — Senior UX Researcher i specjalista Product Discovery & AI. Buduję systemy decyzyjne, automatyzuję procesy badawcze i wdrażam rozwiązania AI w produktach z wielomilionową bazą użytkowników." data-en="Łukasz Duda — Senior UX Researcher and Product Discovery & AI specialist. I build decision-making systems, automate research processes, and deploy AI solutions in products with a multi-million user base.">
+    <meta property="og:image" content="https://www.lukaszduda.eu/images/hero-image.svg">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://lukaszduda.eu/">
-    <meta property="twitter:title" content="Łukasz Duda - UX researcher & designer">
-    <meta property="twitter:description" content="UX researcher & designer specializing in product discovery. Portfolio of research projects and case studies.">
-    <meta property="twitter:image" content="https://lukaszduda.eu/images/hero-image.svg">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;600;700&family=Ysabeau+SC:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Łukasz Duda - UX researcher & designer</title>
+    <meta property="twitter:url" content="https://www.lukaszduda.eu/">
+    <meta property="twitter:title" content="Łukasz Duda — Senior UX Researcher | Product Discovery & AI">
+    <meta property="twitter:description" content="Łukasz Duda — Senior UX Researcher i specjalista Product Discovery & AI. Buduję systemy decyzyjne, automatyzuję procesy badawcze i wdrażam rozwiązania AI w produktach z wielomilionową bazą użytkowników." data-en="Łukasz Duda — Senior UX Researcher and Product Discovery & AI specialist. I build decision-making systems, automate research processes, and deploy AI solutions in products with a multi-million user base.">
+    <meta property="twitter:image" content="https://www.lukaszduda.eu/images/hero-image.svg">
+
+<title>Łukasz Duda — Senior UX Researcher | Product Discovery & AI</title>
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="7aa58302-5c58-4f3a-b484-7767438d6d70"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-top">
+    <a href="#main-content" class="skip-link">Przejdź do treści</a>
+    <div id="lang-announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+    <div class="navbar-wrapper">
+        <div class="navbar">
             <div class="container">
-                <a href="/" class="logo">Łukasz&nbsp;Duda</a>
-                
-                <button class="hamburger" id="hamburger" data-umami-event="menu-open">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <a href="/" class="logo" data-umami-event="logo-home">Łukasz&nbsp;Duda</a>
+                <div class="navbar-right">
+                    <nav class="navbar-nav">
+                        <a href="#skills" data-umami-event="nav-skills" data-en="About me">O mnie</a>
+                        <a href="#portfolio" data-umami-event="nav-portfolio" data-en="Projects">Projekty</a>
+                        <a href="#trusted" data-umami-event="nav-trusted" data-en="Trusted by">Zaufali mi</a>
+                        <a href="#contact" data-umami-event="nav-contact" data-en="Contact">Kontakt</a>
+                    </nav>
+                    <div class="navbar-controls">
+                    <button class="lang-toggle" id="langToggle" aria-label="Zmień język" aria-pressed="false" data-umami-event="lang-toggle">
+                        <span class="lang-pl">PL</span>
+                        <span class="lang-en">EN</span>
+                    </button>
+                    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Przełącz tryb ciemny" data-umami-event="darkmode-toggle">
+                        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    </button>
+                    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Pokaż / ukryj panel boczny" aria-pressed="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="1"/>
+                            <line x1="9" y1="3" x2="9" y2="21"/>
+                        </svg>
+                    </button>
+                    <button class="hamburger" id="hamburger" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    </div>
+                </div>
             </div>
         </div>
-        
         <div class="navbar-drawer" id="navbarDrawer">
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="cs-experience-radar.html">Case&nbsp;study: Experience&nbsp;radar</a></li>
-                <li><a href="cs-email-research.html">Case&nbsp;study: Email&nbsp;service&nbsp;research</a></li>
-                <li><a href="cs-evaluation-method.html">Case&nbsp;study: Evaluating&nbsp;design&nbsp;ideas</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#skills" data-umami-event="drawer-skills" data-en="About me">O mnie</a>
+            <a href="#portfolio" data-umami-event="drawer-portfolio" data-en="Projects">Projekty</a>
+            <a href="#trusted" data-umami-event="drawer-trusted" data-en="Trusted by">Zaufali mi</a>
+            <a href="#contact" data-umami-event="drawer-contact" data-en="Contact">Kontakt</a>
         </div>
-    </nav>
+    </div>
 
-    <section class="hero">
+    <button class="sidebar-reopen" id="sidebarReopen" aria-label="Otwórz panel boczny">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="1"/>
+            <line x1="9" y1="3" x2="9" y2="21"/>
+        </svg>
+    </button>
+
+    <main id="main-content">
+    <!-- 2. Hero -->
+    <section class="hero" id="hero">
         <div class="container">
+            <div class="hero-grid-area">
             <div class="hero-top">
-                <img src="images/hero-image.svg" alt="ŁÂukasz Duda" class="hero-image">
-                <h1>
-                    <span class="reveal-line">Bringing clarity</span><br>
-                    <span class="reveal-line">to product decisions.</span>
-                </h1>
+                <div class="hero-text">
+                    <h1>
+                        <span class="reveal-line" data-en="I build AI-powered systems">Buduję systemy oparte na&nbsp;AI</span>
+                    </h1>
+                    <p class="hero-tagline" data-en="I&nbsp;turn scattered data about the&nbsp;product, users, and&nbsp;market into a&nbsp;repeatable decision-making process.">Zamieniam rozproszone dane o&nbsp;produkcie, użytkownikach i&nbsp;rynku w&nbsp;powtarzalny proces decyzyjny</p>
+                </div>
+
+                <div class="hero-visual" id="heroVisual" aria-hidden="true">
+                    <svg class="sys-hub" viewBox="0 0 600 240" width="600" height="240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Ripples emanating from primary chip -->
+                        <rect class="hub-ripple hub-ripple-1" x="330" y="65" width="60" height="60" rx="4"/>
+                        <rect class="hub-ripple hub-ripple-2" x="330" y="65" width="60" height="60" rx="4"/>
+
+                        <!-- Circuit traces -->
+                        <g class="hub-traces">
+                            <!-- Chip A — going up -->
+                            <path class="hub-trace-line" style="--d:0.95s" d="M 340,58 L 340,40 L 250,40 L 250,20"/>
+                            <path class="hub-trace-line" style="--d:1.05s" d="M 350,58 L 350,12"/>
+                            <path class="hub-trace-line" style="--d:0.90s" d="M 360,58 L 360,30 L 330,30 L 330,14"/>
+                            <path class="hub-trace-line" style="--d:1.10s" d="M 370,58 L 370,35 L 425,35 L 425,14"/>
+                            <path class="hub-trace-line" style="--d:1.20s" d="M 380,58 L 380,45 L 465,45 L 465,24"/>
+                            <!-- Chip A — going right -->
+                            <path class="hub-trace-line" style="--d:1.00s" d="M 397,73 L 420,73 L 420,45 L 490,45"/>
+                            <path class="hub-trace-line" style="--d:1.10s" d="M 397,83 L 510,83"/>
+                            <path class="hub-trace-line" style="--d:1.20s" d="M 397,93 L 555,93"/>
+                            <path class="hub-trace-line" style="--d:1.30s" d="M 397,103 L 587,103"/>
+                            <path class="hub-trace-line" style="--d:1.15s" d="M 397,113 L 450,113 L 450,140 L 530,140"/>
+                            <!-- Chip A — going down -->
+                            <path class="hub-trace-line" style="--d:1.15s" d="M 340,132 L 340,165 L 290,165 L 290,202"/>
+                            <path class="hub-trace-line" style="--d:1.25s" d="M 350,132 L 350,222"/>
+                            <path class="hub-trace-line" style="--d:1.10s" d="M 360,132 L 360,185 L 400,185 L 400,215"/>
+                            <path class="hub-trace-line" style="--d:1.05s" d="M 370,132 L 370,150 L 440,150 L 440,190"/>
+                            <path class="hub-trace-line" style="--d:1.20s" d="M 380,132 L 380,175 L 470,175 L 470,212"/>
+                            <!-- Chip A — left-side standalone -->
+                            <path class="hub-trace-line" style="--d:1.00s" d="M 323,73 L 292,73"/>
+                            <path class="hub-trace-line" style="--d:0.95s" d="M 323,93 L 279,93"/>
+                            <!-- Inter-chip (B right → A left) -->
+                            <path class="hub-trace-line" style="--d:1.40s" d="M 192,136 L 230,136 L 230,83 L 323,83"/>
+                            <path class="hub-trace-line" style="--d:1.50s" d="M 192,148 L 260,148 L 260,103 L 323,103"/>
+                            <path class="hub-trace-line" style="--d:1.60s" d="M 192,160 L 290,160 L 290,113 L 323,113"/>
+
+                            <!-- Chip B — going up -->
+                            <path class="hub-trace-line" style="--d:0.90s" d="M 152,122 L 152,90 L 100,90 L 100,58"/>
+                            <path class="hub-trace-line" style="--d:1.00s" d="M 164,122 L 164,48"/>
+                            <path class="hub-trace-line" style="--d:1.10s" d="M 176,122 L 176,80 L 220,80 L 220,52"/>
+                            <!-- Chip B — going left -->
+                            <path class="hub-trace-line" style="--d:1.05s" d="M 136,136 L 50,136 L 50,108 L 20,108"/>
+                            <path class="hub-trace-line" style="--d:0.95s" d="M 136,148 L 12,148"/>
+                            <path class="hub-trace-line" style="--d:1.20s" d="M 136,160 L 90,160 L 90,190 L 45,190"/>
+                            <!-- Chip B — going down -->
+                            <path class="hub-trace-line" style="--d:1.05s" d="M 152,178 L 152,200 L 80,200 L 80,219"/>
+                            <path class="hub-trace-line" style="--d:1.15s" d="M 164,178 L 164,222"/>
+                            <path class="hub-trace-line" style="--d:1.25s" d="M 176,178 L 176,195 L 240,195 L 240,215"/>
+                        </g>
+
+                        <!-- Trace terminators -->
+                        <g class="hub-ends">
+                            <!-- Chip A upper endpoints -->
+                            <circle class="hub-end hub-end-dot"  style="--d:1.45s" cx="250" cy="20"  r="3"/>
+                            <rect   class="hub-end hub-end-pad"  style="--d:1.55s" x="346" y="6"   width="8" height="6"/>
+                            <circle class="hub-end hub-end-ring" style="--d:1.40s" cx="330" cy="14"  r="3.5"/>
+                            <circle class="hub-end hub-end-dot"  style="--d:1.60s" cx="425" cy="14"  r="3"/>
+                            <circle class="hub-end hub-end-ring" style="--d:1.70s" cx="465" cy="24"  r="3.5"/>
+                            <!-- Chip A right endpoints -->
+                            <circle class="hub-end hub-end-ring" style="--d:1.50s" cx="490" cy="45"  r="3.5"/>
+                            <circle class="hub-end hub-end-dot"  style="--d:1.60s" cx="513" cy="83"  r="3"/>
+                            <rect   class="hub-end hub-end-pad"  style="--d:1.70s" x="555" y="89"  width="8" height="8"/>
+                            <circle class="hub-end hub-end-dot"  style="--d:1.80s" cx="590" cy="103" r="3"/>
+                            <circle class="hub-end hub-end-ring" style="--d:1.65s" cx="530" cy="140" r="3.5"/>
+                            <!-- Chip A lower endpoints -->
+                            <circle class="hub-end hub-end-dot"  style="--d:1.65s" cx="290" cy="202" r="3"/>
+                            <circle class="hub-end hub-end-ring" style="--d:1.75s" cx="350" cy="222" r="3.5"/>
+                            <circle class="hub-end hub-end-dot"  style="--d:1.60s" cx="400" cy="215" r="3"/>
+                            <circle class="hub-end hub-end-dot"  style="--d:1.55s" cx="440" cy="190" r="3"/>
+                            <rect   class="hub-end hub-end-pad"  style="--d:1.70s" x="466" y="209" width="8" height="6"/>
+                            <!-- Chip A left endpoints -->
+                            <circle class="hub-end hub-end-dot"  style="--d:1.50s" cx="292" cy="73"  r="3"/>
+                            <circle class="hub-end hub-end-ring" style="--d:1.45s" cx="279" cy="93"  r="3"/>
+
+                            <!-- Chip B upper endpoints -->
+                            <circle class="hub-end hub-end-ring" style="--d:1.40s" cx="100" cy="58"  r="3.5"/>
+                            <circle class="hub-end hub-end-dot"  style="--d:1.50s" cx="164" cy="48"  r="3"/>
+                            <rect   class="hub-end hub-end-pad"  style="--d:1.60s" x="216" y="46"  width="8" height="6"/>
+                            <!-- Chip B left endpoints -->
+                            <circle class="hub-end hub-end-dot"  style="--d:1.55s" cx="20"  cy="108" r="3"/>
+                            <circle class="hub-end hub-end-ring" style="--d:1.45s" cx="8"   cy="148" r="4"/>
+                            <rect   class="hub-end hub-end-pad"  style="--d:1.70s" x="35"  y="187" width="10" height="6"/>
+                            <!-- Chip B lower endpoints -->
+                            <circle class="hub-end hub-end-dot"  style="--d:1.55s" cx="80"  cy="219" r="3"/>
+                            <circle class="hub-end hub-end-ring" style="--d:1.65s" cx="164" cy="222" r="3.5"/>
+                            <circle class="hub-end hub-end-dot"  style="--d:1.75s" cx="240" cy="215" r="3"/>
+                        </g>
+
+                        <!-- Chip B (secondary, lower-left) -->
+                        <g class="hub-chip">
+                            <!-- Pins: top -->
+                            <rect class="hub-pin" style="--d:0.50s" x="150" y="122" width="4" height="6"/>
+                            <rect class="hub-pin" style="--d:0.53s" x="162" y="122" width="4" height="6"/>
+                            <rect class="hub-pin" style="--d:0.56s" x="174" y="122" width="4" height="6"/>
+                            <!-- Pins: right -->
+                            <rect class="hub-pin" style="--d:0.59s" x="186" y="134" width="6" height="4"/>
+                            <rect class="hub-pin" style="--d:0.62s" x="186" y="146" width="6" height="4"/>
+                            <rect class="hub-pin" style="--d:0.65s" x="186" y="158" width="6" height="4"/>
+                            <!-- Pins: bottom -->
+                            <rect class="hub-pin" style="--d:0.68s" x="150" y="172" width="4" height="6"/>
+                            <rect class="hub-pin" style="--d:0.71s" x="162" y="172" width="4" height="6"/>
+                            <rect class="hub-pin" style="--d:0.74s" x="174" y="172" width="4" height="6"/>
+                            <!-- Pins: left -->
+                            <rect class="hub-pin" style="--d:0.77s" x="136" y="134" width="6" height="4"/>
+                            <rect class="hub-pin" style="--d:0.80s" x="136" y="146" width="6" height="4"/>
+                            <rect class="hub-pin" style="--d:0.83s" x="136" y="158" width="6" height="4"/>
+                            <!-- Body -->
+                            <rect class="hub-body" style="--d:0.25s" x="142" y="128" width="44" height="44" rx="3"/>
+                            <!-- Inner die (gold accent) -->
+                            <rect class="hub-die" style="--d:1.70s" x="154" y="140" width="20" height="20" rx="2"/>
+                            <!-- Die markings -->
+                            <line class="hub-trace-mark" style="--d:1.85s" x1="164" y1="146" x2="164" y2="154"/>
+                            <line class="hub-trace-mark" style="--d:1.85s" x1="160" y1="150" x2="168" y2="150"/>
+                        </g>
+
+                        <!-- Chip A (primary, upper-right) -->
+                        <g class="hub-chip">
+                            <!-- Pins: top -->
+                            <rect class="hub-pin" style="--d:0.55s" x="338" y="58"  width="4" height="7"/>
+                            <rect class="hub-pin" style="--d:0.58s" x="348" y="58"  width="4" height="7"/>
+                            <rect class="hub-pin" style="--d:0.61s" x="358" y="58"  width="4" height="7"/>
+                            <rect class="hub-pin" style="--d:0.64s" x="368" y="58"  width="4" height="7"/>
+                            <rect class="hub-pin" style="--d:0.67s" x="378" y="58"  width="4" height="7"/>
+                            <!-- Pins: right -->
+                            <rect class="hub-pin" style="--d:0.70s" x="390" y="71"  width="7" height="4"/>
+                            <rect class="hub-pin" style="--d:0.73s" x="390" y="81"  width="7" height="4"/>
+                            <rect class="hub-pin" style="--d:0.76s" x="390" y="91"  width="7" height="4"/>
+                            <rect class="hub-pin" style="--d:0.79s" x="390" y="101" width="7" height="4"/>
+                            <rect class="hub-pin" style="--d:0.82s" x="390" y="111" width="7" height="4"/>
+                            <!-- Pins: bottom -->
+                            <rect class="hub-pin" style="--d:0.85s" x="338" y="125" width="4" height="7"/>
+                            <rect class="hub-pin" style="--d:0.88s" x="348" y="125" width="4" height="7"/>
+                            <rect class="hub-pin" style="--d:0.91s" x="358" y="125" width="4" height="7"/>
+                            <rect class="hub-pin" style="--d:0.94s" x="368" y="125" width="4" height="7"/>
+                            <rect class="hub-pin" style="--d:0.97s" x="378" y="125" width="4" height="7"/>
+                            <!-- Pins: left -->
+                            <rect class="hub-pin" style="--d:0.50s" x="323" y="71"  width="7" height="4"/>
+                            <rect class="hub-pin" style="--d:0.53s" x="323" y="81"  width="7" height="4"/>
+                            <rect class="hub-pin" style="--d:0.56s" x="323" y="91"  width="7" height="4"/>
+                            <rect class="hub-pin" style="--d:0.59s" x="323" y="101" width="7" height="4"/>
+                            <rect class="hub-pin" style="--d:0.62s" x="323" y="111" width="7" height="4"/>
+                            <!-- Body -->
+                            <rect class="hub-body" style="--d:0.10s" x="330" y="65" width="60" height="60" rx="4"/>
+                            <!-- Inner die (gold accent) -->
+                            <rect class="hub-die" style="--d:1.80s" x="345" y="80" width="30" height="30" rx="2"/>
+                            <!-- Die markings -->
+                            <line class="hub-trace-mark" style="--d:1.95s" x1="360" y1="87" x2="360" y2="103"/>
+                            <line class="hub-trace-mark" style="--d:1.95s" x1="352" y1="95" x2="368" y2="95"/>
+                        </g>
+                    </svg>
+
+                    <!-- Mobile version (328x180) -->
+                    <svg class="sys-hub-mobile" viewBox="0 0 328 180" width="328" height="180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Ripples emanating from primary chip -->
+                        <rect class="hub-ripple hub-ripple-1" x="185" y="50" width="44" height="44" rx="3"/>
+                        <rect class="hub-ripple hub-ripple-2" x="185" y="50" width="44" height="44" rx="3"/>
+
+                        <!-- Circuit traces -->
+                        <g class="hub-traces">
+                            <!-- Chip A — going up -->
+                            <path class="hub-trace-line" style="--d:0.95s" d="M 194.5,44 L 194.5,28 L 150,28 L 150,12"/>
+                            <path class="hub-trace-line" style="--d:1.05s" d="M 206.5,44 L 206.5,8"/>
+                            <path class="hub-trace-line" style="--d:1.00s" d="M 218.5,44 L 218.5,22 L 275,22 L 275,10"/>
+                            <!-- Chip A — going right -->
+                            <path class="hub-trace-line" style="--d:1.00s" d="M 235,59.5 L 260,59.5 L 260,42 L 315,42"/>
+                            <path class="hub-trace-line" style="--d:1.10s" d="M 235,71.5 L 322,71.5"/>
+                            <path class="hub-trace-line" style="--d:1.20s" d="M 235,83.5 L 290,83.5 L 290,112 L 318,112"/>
+                            <!-- Chip A — going down -->
+                            <path class="hub-trace-line" style="--d:1.15s" d="M 194.5,100 L 194.5,130 L 155,130 L 155,168"/>
+                            <path class="hub-trace-line" style="--d:1.25s" d="M 206.5,100 L 206.5,170"/>
+                            <path class="hub-trace-line" style="--d:1.20s" d="M 218.5,100 L 218.5,145 L 290,145 L 290,172"/>
+                            <!-- Chip A — left standalone -->
+                            <path class="hub-trace-line" style="--d:0.95s" d="M 179,83.5 L 168,83.5"/>
+                            <!-- Inter-chip (B right → A left) -->
+                            <path class="hub-trace-line" style="--d:1.40s" d="M 116,101.5 L 145,101.5 L 145,59.5 L 179,59.5"/>
+                            <path class="hub-trace-line" style="--d:1.50s" d="M 116,111.5 L 158,111.5 L 158,71.5 L 179,71.5"/>
+                            <!-- Chip B — right standalone -->
+                            <path class="hub-trace-line" style="--d:1.30s" d="M 116,121.5 L 155,121.5 L 155,138 L 172,138"/>
+                            <!-- Chip B — going up -->
+                            <path class="hub-trace-line" style="--d:0.90s" d="M 84.5,89 L 84.5,72 L 50,72 L 50,55"/>
+                            <path class="hub-trace-line" style="--d:1.00s" d="M 94.5,89 L 94.5,50"/>
+                            <path class="hub-trace-line" style="--d:1.10s" d="M 104.5,89 L 104.5,62 L 130,62 L 130,45"/>
+                            <!-- Chip B — going left -->
+                            <path class="hub-trace-line" style="--d:1.05s" d="M 72,101.5 L 42,101.5 L 42,85 L 22,85"/>
+                            <path class="hub-trace-line" style="--d:0.95s" d="M 72,111.5 L 10,111.5"/>
+                            <path class="hub-trace-line" style="--d:1.20s" d="M 72,121.5 L 55,121.5 L 55,135 L 32,135"/>
+                            <!-- Chip B — going down -->
+                            <path class="hub-trace-line" style="--d:1.05s" d="M 84.5,133 L 84.5,155 L 50,155 L 50,170"/>
+                            <path class="hub-trace-line" style="--d:1.15s" d="M 94.5,133 L 94.5,170"/>
+                            <path class="hub-trace-line" style="--d:1.25s" d="M 104.5,133 L 104.5,145 L 135,145 L 135,172"/>
+                        </g>
+
+                        <!-- Trace terminators -->
+                        <g class="hub-ends">
+                            <!-- Chip A upper endpoints -->
+                            <circle class="hub-end hub-end-ring" style="--d:1.40s" cx="150"   cy="12"   r="3"/>
+                            <rect   class="hub-end hub-end-pad"  style="--d:1.55s" x="203"   y="4"    width="7" height="5"/>
+                            <circle class="hub-end hub-end-dot"  style="--d:1.50s" cx="275"   cy="10"   r="2.5"/>
+                            <!-- Chip A right endpoints -->
+                            <circle class="hub-end hub-end-ring" style="--d:1.50s" cx="315"   cy="42"   r="3"/>
+                            <circle class="hub-end hub-end-dot"  style="--d:1.60s" cx="322"   cy="71.5" r="2.5"/>
+                            <rect   class="hub-end hub-end-pad"  style="--d:1.70s" x="314.5" y="109"  width="7" height="6"/>
+                            <!-- Chip A lower endpoints -->
+                            <circle class="hub-end hub-end-ring" style="--d:1.65s" cx="155"   cy="168"  r="3"/>
+                            <circle class="hub-end hub-end-dot"  style="--d:1.75s" cx="206.5" cy="170"  r="2.5"/>
+                            <rect   class="hub-end hub-end-pad"  style="--d:1.70s" x="286.5" y="170"  width="7" height="5"/>
+                            <!-- Chip A left standalone endpoint -->
+                            <circle class="hub-end hub-end-dot"  style="--d:1.45s" cx="168"   cy="83.5" r="2.5"/>
+
+                            <!-- Chip B right standalone endpoint -->
+                            <circle class="hub-end hub-end-ring" style="--d:1.80s" cx="172"   cy="138"  r="3"/>
+                            <!-- Chip B upper endpoints -->
+                            <circle class="hub-end hub-end-ring" style="--d:1.40s" cx="50"    cy="55"   r="3"/>
+                            <circle class="hub-end hub-end-dot"  style="--d:1.50s" cx="94.5"  cy="50"   r="2.5"/>
+                            <rect   class="hub-end hub-end-pad"  style="--d:1.60s" x="126.5" y="42"   width="7" height="5"/>
+                            <!-- Chip B left endpoints -->
+                            <circle class="hub-end hub-end-dot"  style="--d:1.55s" cx="22"    cy="85"   r="2.5"/>
+                            <circle class="hub-end hub-end-ring" style="--d:1.45s" cx="10"    cy="111.5" r="3"/>
+                            <rect   class="hub-end hub-end-pad"  style="--d:1.70s" x="28.5"  y="132"  width="7" height="5"/>
+                            <!-- Chip B lower endpoints -->
+                            <circle class="hub-end hub-end-dot"  style="--d:1.55s" cx="50"    cy="170"  r="2.5"/>
+                            <circle class="hub-end hub-end-ring" style="--d:1.65s" cx="94.5"  cy="170"  r="3"/>
+                            <circle class="hub-end hub-end-dot"  style="--d:1.75s" cx="135"   cy="172"  r="2.5"/>
+                        </g>
+
+                        <!-- Chip B (secondary, lower-left) -->
+                        <g class="hub-chip">
+                            <!-- Pins: top -->
+                            <rect class="hub-pin" style="--d:0.50s" x="83"  y="89"  width="3" height="6"/>
+                            <rect class="hub-pin" style="--d:0.53s" x="93"  y="89"  width="3" height="6"/>
+                            <rect class="hub-pin" style="--d:0.56s" x="103" y="89"  width="3" height="6"/>
+                            <!-- Pins: right -->
+                            <rect class="hub-pin" style="--d:0.59s" x="110" y="100" width="6" height="3"/>
+                            <rect class="hub-pin" style="--d:0.62s" x="110" y="110" width="6" height="3"/>
+                            <rect class="hub-pin" style="--d:0.65s" x="110" y="120" width="6" height="3"/>
+                            <!-- Pins: bottom -->
+                            <rect class="hub-pin" style="--d:0.68s" x="83"  y="127" width="3" height="6"/>
+                            <rect class="hub-pin" style="--d:0.71s" x="93"  y="127" width="3" height="6"/>
+                            <rect class="hub-pin" style="--d:0.74s" x="103" y="127" width="3" height="6"/>
+                            <!-- Pins: left -->
+                            <rect class="hub-pin" style="--d:0.77s" x="72"  y="100" width="6" height="3"/>
+                            <rect class="hub-pin" style="--d:0.80s" x="72"  y="110" width="6" height="3"/>
+                            <rect class="hub-pin" style="--d:0.83s" x="72"  y="120" width="6" height="3"/>
+                            <!-- Body -->
+                            <rect class="hub-body" style="--d:0.25s" x="78" y="95" width="32" height="32" rx="3"/>
+                            <!-- Inner die (gold) -->
+                            <rect class="hub-die" style="--d:1.70s" x="86" y="103" width="16" height="16" rx="2"/>
+                            <!-- Die markings -->
+                            <line class="hub-trace-mark" style="--d:1.85s" x1="94" y1="107" x2="94" y2="115"/>
+                            <line class="hub-trace-mark" style="--d:1.85s" x1="90" y1="111" x2="98" y2="111"/>
+                        </g>
+
+                        <!-- Chip A (primary, upper-right) -->
+                        <g class="hub-chip">
+                            <!-- Pins: top -->
+                            <rect class="hub-pin" style="--d:0.55s" x="193" y="44"  width="3" height="6"/>
+                            <rect class="hub-pin" style="--d:0.58s" x="205" y="44"  width="3" height="6"/>
+                            <rect class="hub-pin" style="--d:0.61s" x="217" y="44"  width="3" height="6"/>
+                            <!-- Pins: right -->
+                            <rect class="hub-pin" style="--d:0.64s" x="229" y="58"  width="6" height="3"/>
+                            <rect class="hub-pin" style="--d:0.67s" x="229" y="70"  width="6" height="3"/>
+                            <rect class="hub-pin" style="--d:0.70s" x="229" y="82"  width="6" height="3"/>
+                            <!-- Pins: bottom -->
+                            <rect class="hub-pin" style="--d:0.73s" x="193" y="94"  width="3" height="6"/>
+                            <rect class="hub-pin" style="--d:0.76s" x="205" y="94"  width="3" height="6"/>
+                            <rect class="hub-pin" style="--d:0.79s" x="217" y="94"  width="3" height="6"/>
+                            <!-- Pins: left -->
+                            <rect class="hub-pin" style="--d:0.50s" x="179" y="58"  width="6" height="3"/>
+                            <rect class="hub-pin" style="--d:0.53s" x="179" y="70"  width="6" height="3"/>
+                            <rect class="hub-pin" style="--d:0.56s" x="179" y="82"  width="6" height="3"/>
+                            <!-- Body -->
+                            <rect class="hub-body" style="--d:0.10s" x="185" y="50" width="44" height="44" rx="3"/>
+                            <!-- Inner die (gold accent) -->
+                            <rect class="hub-die" style="--d:1.80s" x="196" y="61" width="22" height="22" rx="2"/>
+                            <!-- Die markings -->
+                            <line class="hub-trace-mark" style="--d:1.95s" x1="207" y1="66" x2="207" y2="78"/>
+                            <line class="hub-trace-mark" style="--d:1.95s" x1="201" y1="72" x2="213" y2="72"/>
+                        </g>
+                    </svg>
+                </div>
+
             </div>
-            
-            <hr class="hero-line">
-            
+            </div>
+
+            <div class="hero-line dot-ornament"></div>
+
             <div class="hero-bottom">
                 <div class="hero-info">
                     <p class="hero-name">Łukasz&nbsp;Duda</p>
-                    <p class="hero-role">ux&nbsp;researcher&nbsp;&amp;&nbsp;designer</p>
-                    <p class="hero-specialty">product&nbsp;discovery&nbsp;specialist</p>
+                    <p class="hero-role" data-en="senior ux researcher<br>product discovery &amp; ai">senior ux researcher<br>product discovery &amp; ai</p>
                 </div>
-                <a href="#contact" class="btn-primary" data-umami-event="hero-contact">Contact&nbsp;me</a>
+                <a href="#contact" class="btn-primary" data-umami-event="hero-contact" data-en="Let's&nbsp;talk">Porozmawiajmy</a>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="portfolio">
+    <!-- 4. Kompetencje -->
+    <section class="about-me" id="skills">
         <div class="container">
-            <h2 data-aos="fade-up">Selected work and&nbsp;achievements</h2>
-            
-            <div class="portfolio-grid">
-                <div data-aos="fade-up" data-aos-delay="0">
-                    <a href="cs-experience-radar.html" class="portfolio-card" data-umami-event="portfolio-card-radar">
-                        <img src="images/radar-cover.avif" alt="Experience radar case study">
-                        <div class="card-overlay"></div>
-                        <h3>Experience&nbsp;radar</h3>
-                        <p>AI-powered user&nbsp;experience monitoring. <strong>Read&nbsp;more&nbsp;→</strong></p>
-                    </a>
+            <h2 data-en="About me">O mnie</h2>
+
+            <div class="about-me-grid">
+                <div class="about-me-image-wrapper">
+                    <img src="images/hero-image.svg" alt="Łukasz Duda" class="about-me-image" loading="lazy">
                 </div>
-                
-                <div data-aos="fade-up" data-aos-delay="100">
-                    <a href="cs-email-research.html" class="portfolio-card" data-umami-event="portfolio-card-email">
-                        <img src="images/research-cover.avif" alt="Email service research case study">
-                        <div class="card-overlay"></div>
-                        <h3>Email&nbsp;service&nbsp;research</h3>
-                        <p>Overview of&nbsp;my research and&nbsp;analysis. <strong>Read&nbsp;more&nbsp;→</strong></p>
-                    </a>
+                <div class="about-me-text">
+                    <p data-en="I've been working in UX research and design since 2020. I started with a UX/UI bootcamp, where I took my first steps at a software house agency. Along the way I trained in quantitative data analysis, Umami strategy, advanced Excel, foresight, UI design, UX writing, and many other areas. Today, in my fifth year at Wirtualna Polska, I work on an email service with 8 million active users. Step by step, I'm building my specialization, increasingly supported by AI solutions.">Badaniami i projektowaniem UX zajmuję się od 2020 roku. Zacząłem od bootcampu UX/UI, po którym stawiałem pierwsze kroki w agencji software house. Dokształcałem się w analizie danych ilościowych, strategii Umami, zaawansowanym Excelu, w obszarze foresight, UI designie, UX writingu i wielu innych dziedzinach. Dziś, piąty rok w Wirtualnej Polsce, pracuję nad pocztą email z 8 milionami aktywnych użytkowników. Krok po kroku buduję swoją specjalizację, wspomagając się rozwiązaniami AI w coraz szerszym zakresie.</p>
+                    <p data-en="Along the way, I learned many things that define my work today. One of them is that a single research report rarely changes a product. What changes it are systems the entire team can run without my involvement. Another thing is that AI is not a goal. It is a way to solve problems that can't otherwise be solved. I don't automate to look modern, but to remove limitations.">Po drodze nauczyłem się wielu rzeczy, które dziś definiują moją pracę. Jedną z nich jest to, że pojedynczy raport z badań rzadko zmienia produkt. Zmieniają go systemy, które cały zespół może uruchamiać bez mojego udziału. Kolejną kwestią jest to, że AI nie jest celem, tylko sposobem na problemy, których inaczej nie da się rozwiązać. Nie automatyzuję, żeby było nowocześnie, tylko po to, żeby zdejmować ograniczenia.</p>
                 </div>
-                
-                <div data-aos="fade-up" data-aos-delay="200">
-                    <a href="cs-evaluation-method.html" class="portfolio-card" data-umami-event="portfolio-card-evaluation">
-                        <img src="images/evaluation-cover.avif" alt="Evaluating design ideas case study">
-                        <div class="card-overlay"></div>
-                        <h3>Evaluating&nbsp;design&nbsp;ideas</h3>
-                        <p>Research-based prioritization&nbsp;method. <strong>Read&nbsp;more&nbsp;→</strong></p>
-                    </a>
+            </div>
+
+            <div class="offer-grid">
+
+                <div class="offer-card dot-ornament">
+                    <h3 data-en="I build systems">Buduję systemy</h3>
+                    <p class="step-text" data-en="I don't stop at the report. I build the decision-making infrastructure that empowers the entire product team. An experience radar classifying 20 000 opinions a month with AI. A UX repository linking research with prioritization. A scoring method based on five criteria, fed by research and market analysis data. A RAG agent giving the team 24/7 access to the knowledge base.">Nie kończę na raporcie. Tworzę infrastrukturę decyzyjną, która wzmacnia cały zespół produktowy. Radar doświadczeń klasyfikujący 20 000 opinii miesięcznie z AI. Repozytorium UX łączące badania z priorytetyzacją. Metoda scoringowa oparta na pięciu kryteriach, zasilana danymi z badań i analiz rynku. Agent RAG dający zespołowi dostęp do bazy wiedzy 24/7.</p>
                 </div>
+
+                <div class="offer-card dot-ornament">
+                    <h3 data-en="AI as a multiplier">AI jako mnożnik</h3>
+                    <p class="step-text" data-en="I independently design and implement AI solutions from idea to working tool. I can prepare a knowledge base for RAG architecture and semantic search. I automate processes of classifying, parsing, and anonymizing data, as well as generating reports and analyses. I treat AI as a tool for solving problems that can't be solved manually at scale.">Samodzielnie projektuję i wdrażam rozwiązania AI od pomysłu do działającego narzędzia. Potrafię przygotować bazę wiedzy pod architekturę RAG i wyszukiwanie semantyczne. Automatyzuję procesy klasyfikowania, parsowania i anonimizacji danych oraz generowania raportów i analiz. AI traktuję jako narzędzie do rozwiązywania problemów, których nie da się rozwiązać ręcznie na dużej skali.</p>
+                </div>
+
+                <div class="offer-card dot-ornament">
+                    <h3 data-en="Scale and impact">Skala i wpływ</h3>
+                    <p class="step-text" data-en="I work on a product with 8 million active users, where my recommendations have real consequences at scale. I detected over 100 product opportunities and threats, turning them into design and development tasks. I implemented over 50 UX metrics, ensuring continuous product health monitoring. I shared over 100 key insights with the team, forming the foundation of later design work.">Pracuję w produkcie z 8 milionami aktywnych użytkowników, gdzie moje rekomendacje mają realne konsekwencje na dużej skali. Wykryłem ponad 100 szans i zagrożeń dla produktu, przekuwając je w zadania projektowe i deweloperskie. Wdrożyłem ponad 50 metryk UX, zapewniając ciągły monitoring kondycji produktu. Udostępniłem zespołowi ponad 100 kluczowych obserwacji, będących filarem późniejszych prac projektowych.</p>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
+    <!-- 7. Portfolio -->
+    <section id="portfolio" class="portfolio-teaser">
         <div class="container">
-            <h2 data-aos="fade-up">What I&nbsp;bring to&nbsp;the&nbsp;table</h2>
-            
-            <div class="skills-grid">
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
-                    <h3>Research</h3>
-                    <p>I&nbsp;design and&nbsp;run continuous research for&nbsp;products with multi-million user&nbsp;bases. I&nbsp;combine surveys, behavioral data, interviews, and&nbsp;large-scale feedback analysis to&nbsp;uncover real user problems and&nbsp;needs.</p>
-                    <div class="skill-tags">
-                        <span>Surveys</span>
-                        <span>NPS</span>
-                        <span>In-depth interviews</span>
-                        <span>Behavioral analytics</span>
-                        <span>AI-powered analysis</span>
-                        <span>Desk research</span>
+            <h2 data-en="My projects">Moje projekty</h2>
+            <p class="portfolio-teaser-desc" data-en="I built most of my experience working on products with a multi-million user base. Below are five projects that best show how I work and what results I deliver.">Większość mojego doświadczenia zbudowałem przy produktach z wielomilionową bazą użytkowników. Poniżej pięć projektów, które najlepiej pokazują jak pracuję i jakie wyniki dostarczam.</p>
+
+            <div class="pce dot-ornament">
+                <button class="pce-header" aria-expanded="false" data-card="experience-radar">
+                    <span class="pce-title" data-en="Experience radar">Radar doświadczeń</span>
+                    <span class="pce-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="4,7 10,13 16,7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="pce-body">
+                    <div class="pce-body-inner pce-body-inner--visual">
+                        <div class="pce-body-text">
+                            <span class="pce-para-label" data-en="Challenge">Wyzwanie</span>
+                            <p data-en="The email service generated a massive volume of user feedback from support tickets, surveys, and app store reviews. These sources were scattered, and the volume made manual analysis impossible. We needed a tool to continuously track user experiences and respond to problems before they escalate.">Serwis pocztowy generował ogromną ilość opinii użytkowników ze zgłoszeń supportowych, ankiet i recenzji w sklepach z aplikacjami. Te źródła były rozproszone, a wolumen uniemożliwiał ręczną analizę. Potrzebowaliśmy narzędzia, które pozwoli na bieżąco śledzić doświadczenia użytkowników i reagować na problemy zanim urosną.</p>
+                            <span class="pce-para-label" data-en="My role">Moja rola</span>
+                            <p data-en="I took the initiative to collect all available user feedback and bring it to a common denominator. The first step was identifying feedback channels and ensuring their steady flow. I then designed a classification system: 51 research topics across 6 feedback types. Together with the development team, we built an AI-powered automation (a Make scenario using the OpenAI API) that classifies about 20 000 opinions a month. Over time, I replaced Make with my own automation solution, reducing research costs. Before deploying AI, I took care of data security by co-creating a personal data anonymization tool. I also built a tool for parsing raw research data from many different sources, normalizing them to a defined structure. I publish results in a monthly report covering platform breakdown, six-month trends, and key insights. With each month, I optimize and automate this process further.">Wyszedłem z inicjatywą zebrania wszelkich dostępnych opinii użytkowników i sprowadzenia ich do wspólnego mianownika. Pierwszym krokiem było zidentyfikowanie kanałów pozyskiwania opinii i zapewnienie ich stałego dopływu. Następnie zaprojektowałem system klasyfikowania: 51 tematów badawczych w 6 typach feedbacku. Wspólnie z zespołem deweloperskim stworzyliśmy automatyzację opartą na AI (scenariusz Make z wykorzystaniem OpenAI API), która klasyfikuje około 20 000 opinii miesięcznie. Z czasem zastąpiłem Make własnym rozwiązaniem do automatyzacji, redukując koszty badań. Przed wdrożeniem AI zadbałem o bezpieczeństwo danych, współtworząc narzędzie anonimizujące dane osobowe. Stworzyłem też narzędzie do parsowania surowych danych badawczych z wielu różnych źródeł, sprowadzając je do ustalonej struktury. Wyniki publikuję w comiesięcznym raporcie, zawierającym podział na platformy, trendy półroczne i kluczowe insighty. Z każdym kolejnym miesiącem optymalizuję i automatyzuję ten proces.</p>
+                            <span class="pce-para-label" data-en="Results">Efekty</span>
+                            <ul class="pce-list">
+                                <li data-en="I designed and implemented a method for cyclical quantitative-qualitative research, supported by AI.">Zaprojektowałem i wdrożyłem metodę cyklicznych badań ilościowo-jakościowych, wspieraną przez AI.</li>
+                                <li data-en="I introduced over 50 UX metrics covering user perception and behavior.">Wprowadziłem ponad 50 metryk UX dotyczących percepcji i zachowań użytkowników.</li>
+                                <li data-en="I detected dozens of changes in user experiences, identifying key problems and unmet needs.">Wykryłem dziesiątki zmian w doświadczeniach użytkowników, identyfikując kluczowe problemy i niezaspokojone potrzeby.</li>
+                                <li data-en="I discovered over 100 improvement ideas and turned them into design tasks.">Odkryłem ponad 100 pomysłów na usprawnienia i przekształciłem je w zadania projektowe.</li>
+                                <li data-en="I discovered over 50 technical issues and turned them into developer tasks.">Odkryłem ponad 50 problemów technicznych i przekształciłem je w zadania dla deweloperów.</li>
+                                <li data-en="I deliver a monthly report to the team that supports product decisions with data instead of intuition.">Dostarczam zespołowi comiesięczny raport, który wspiera decyzje produktowe danymi zamiast intuicją.</li>
+                                <li data-en="I reduced research costs by replacing a third-party no-code tool with my own automation solution.">Zredukowałem koszty badań, zastępując zewnętrzne narzędzie no-code własnym rozwiązaniem do automatyzacji.</li>
+                            </ul>
+                        </div>
+                        <div class="pce-visual">
+                            <svg class="pce-satellite" viewBox="0 0 56 56" width="160" height="160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="icon-satellite-title">
+                                <title id="icon-satellite-title">Satelita — analityka</title>
+                                <!-- Antenna ball at top -->
+                                <circle class="icon-part" cx="28" cy="13" r="3"/>
+                                <!-- Mast pole -->
+                                <line class="icon-part" x1="28" y1="16" x2="28" y2="27"/>
+                                <!-- Left tower leg -->
+                                <line class="icon-part" x1="28" y1="27" x2="6" y2="53"/>
+                                <!-- Right tower leg -->
+                                <line class="icon-part" x1="28" y1="27" x2="50" y2="53"/>
+                                <!-- Base bar -->
+                                <line class="icon-part" x1="6" y1="53" x2="50" y2="53"/>
+                                <!-- Horizontal crossbar at leg midpoints -->
+                                <line class="icon-part" x1="17" y1="40" x2="39" y2="40"/>
+                                <!-- X brace: right-bottom to left-mid -->
+                                <line class="icon-part" x1="50" y1="53" x2="17" y2="40"/>
+                                <!-- X brace: left-bottom to right-mid -->
+                                <line class="icon-part" x1="6" y1="53" x2="39" y2="40"/>
+                                <!-- Gold signal waves — centered at antenna (28,13), spanning 120° each side -->
+                                <path class="sat-wave sat-wave-1" d="M 24,6.1 A 8,8 0 0 0 24,19.9"/>
+                                <path class="sat-wave sat-wave-1" d="M 32,6.1 A 8,8 0 0 1 32,19.9"/>
+                                <path class="sat-wave sat-wave-2" d="M 21,0.9 A 14,14 0 0 0 21,25.1"/>
+                                <path class="sat-wave sat-wave-2" d="M 35,0.9 A 14,14 0 0 1 35,25.1"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Design</h3>
-                    <p>I&nbsp;translate research into&nbsp;clear interfaces and&nbsp;user experiences. I&nbsp;create information architecture, user&nbsp;flows, wireframes, and&nbsp;UX&nbsp;writing that&nbsp;reduces friction and&nbsp;supports usability.</p>
-                    <div class="skill-tags">
-                        <span>Information architecture</span>
-                        <span>User flows</span>
-                        <span>Wireframing</span>
-                        <span>UX writing</span>
-                        <span>Accessibility</span>
-                    </div>
-                </div>
-                
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Strategy</h3>
-                    <p>I&nbsp;help teams prioritize what&nbsp;to&nbsp;build next. I&nbsp;analyze competitors, monitor market&nbsp;trends, and&nbsp;facilitate workshops that&nbsp;align user&nbsp;needs with&nbsp;business goals.</p>
-                    <div class="skill-tags">
-                        <span>Competitor analysis</span>
-                        <span>Trend research</span>
-                        <span>Prioritization frameworks</span>
-                        <span>Ideation workshops</span>
+            </div>
+
+            <div class="pce dot-ornament">
+                <button class="pce-header" aria-expanded="false" data-card="email-research">
+                    <span class="pce-title" data-en="Email service research">Badania pocztowe</span>
+                    <span class="pce-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="4,7 10,13 16,7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="pce-body">
+                    <div class="pce-body-inner pce-body-inner--visual">
+                        <div class="pce-body-text">
+                            <span class="pce-para-label" data-en="Challenge">Wyzwanie</span>
+                            <p data-en="In the team working on the email service, we needed a systematic approach to research. We had sparse analytics data but lacked the full picture. Who are our users, how do they use the service, what are their needs? We also lacked regular knowledge about the market, competition, and trends to set the right product direction.">W zespole pracującym nad serwisem pocztowym potrzebowaliśmy systematycznego podejścia do badań. Dysponowaliśmy szczątkowymi danymi analitycznymi, ale brakowało pełnego obrazu. Kim są nasi użytkownicy, jak korzystają z serwisu, jakie mają potrzeby? Brakowało nam również regularnej wiedzy o rynku, konkurencji i trendach, by przyjąć odpowiedni kierunek rozwoju produktu.</p>
+                            <span class="pce-para-label" data-en="My role">Moja rola</span>
+                            <p data-en="I took on the role of UX researcher and assumed responsibility for building and running the entire research practice. First, I identified the user structure based on analytics and surveys. In the meantime, I implemented the NPS metric across all service versions. With the development team, we launched measurements of key interface elements. Over time, I expanded the scope to include regular competitive monitoring. I analyzed trends and legal changes in the email market. I conducted a series of in-depth interviews with users. I independently designed and ran many surveys, adapting the format to the team's current needs. I continuously take the initiative for further research.">Objąłem rolę UX researchera i wziąłem odpowiedzialność za zbudowanie i prowadzenie całej praktyki badawczej. Na początek zidentyfikowałem strukturę użytkowników na bazie analityki i ankiet. W międzyczasie wdrożyłem metrykę NPS we wszystkich wersjach serwisu. Z pomocą zespołu deweloperskiego uruchomiliśmy pomiary kluczowych elementów interfejsu. Z czasem rozszerzyłem zakres o&nbsp;regularny monitoring konkurencji. Wykonałem analizę trendów i zmian prawnych na rynku email. Przeprowadziłem serie wywiadów pogłębionych z użytkownikami. Samodzielnie zaprojektowałem i przeprowadziłem wiele badań ankietowych, dostosowując format do aktualnych potrzeb zespołu. Stale wychodzę z inicjatywą do kolejnych badań.</p>
+                            <span class="pce-para-label" data-en="Results">Efekty</span>
+                            <ul class="pce-list">
+                                <li data-en="I combined multiple user information channels into a single database, opening new research perspectives.">Połączyłem wiele kanałów informacji o użytkownikach w jedną bazę danych, otwierając nowe perspektywy badawcze.</li>
+                                <li data-en="I initiated and lead a user behavior measurement project, contributing to the redesign of the information architecture.">Zainicjowałem i prowadzę projekt pomiaru zachowań użytkowników, przyczyniając się do przeprojektowania architektury informacji.</li>
+                                <li data-en="I created a competitive functionality index that feeds the team's ideation workshops.">Stworzyłem indeks funkcjonalności konkurencji, który zasila warsztaty ideacyjne zespołu.</li>
+                                <li data-en="I improved competitive service monitoring by implementing cyclical reports on their activities.">Usprawniłem obserwacje konkurencyjnych serwisów, wdrażając cykliczne raporty o ich działaniach.</li>
+                                <li data-en="I contributed to shaping the product development strategy by delivering an analysis of global trends and legal regulations affecting the email market.">Przyczyniłem się do ukierunkowania strategii rozwoju produktu, dostarczając analizę globalnych trendów i regulacji prawnych wpływających na rynek usług email.</li>
+                                <li data-en="I facilitated service redesign preparations by conducting in-depth interviews about email usage preferences.">Ułatwiłem przygotowania do przeprojektowania serwisu, przeprowadzając wywiady pogłębione o preferencjach korzystania z poczty email.</li>
+                                <li data-en="I continuously deliver new knowledge by conducting dozens of surveys across a multi-million user base. In total, I've collected over 500 000 responses.">Stale dostarczam nową wiedzę, przeprowadzając dziesiątki ankiet na wielomilionowej bazie użytkowników. Łącznie zebrałem ponad 500 000 odpowiedzi.</li>
+                            </ul>
+                        </div>
+                        <div class="pce-visual">
+                            <svg class="pce-magnifier" viewBox="0 0 56 56" width="160" height="160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="icon-magnifier-title">
+                                <title id="icon-magnifier-title">Lupa — badania</title>
+                                <circle class="icon-part" cx="19" cy="19" r="14"/>
+                                <circle class="icon-part" cx="19" cy="19" r="10"/>
+                                <rect class="icon-part" x="25" y="36.5" width="30" height="7" rx="3.5" transform="rotate(45 40 40)"/>
+                                <path class="mgn-shine-arc" d="M 14,17 A 5,5 0 0 1 17,14"/>
+                                <circle class="mgn-shine-dot" cx="20" cy="13.5" r="1.5"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="trusted">
+            <div class="pce dot-ornament">
+                <button class="pce-header" aria-expanded="false" data-card="ai-agent">
+                    <span class="pce-title" data-en="AI agent for the product team">Agent AI dla zespołu produktowego</span>
+                    <span class="pce-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="4,7 10,13 16,7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="pce-body">
+                    <div class="pce-body-inner pce-body-inner--visual">
+                        <div class="pce-body-text">
+                            <span class="pce-para-label" data-en="Challenge">Wyzwanie</span>
+                            <p data-en="Over the years of working on the email service, we accumulated a large knowledge base. Research reports, competitive analyses, experience radar insights, survey results, and product documentation. The problem was that this knowledge was scattered across many files and tools. When someone on the team needed specific information, they had to either search through dozens of documents or ask me directly.">Przez lata pracy nad serwisem pocztowym zgromadziliśmy dużą bazę wiedzy. Raporty z badań, analizy konkurencji, insighty z radaru doświadczeń, wyniki ankiet i dokumentację produktową. Problem polegał na tym, że ta wiedza była rozproszona po wielu plikach i narzędziach. Gdy ktoś z zespołu potrzebował konkretnej informacji, musiał albo przeszukiwać dziesiątki dokumentów, albo pytać mnie bezpośrednio.</p>
+                            <span class="pce-para-label" data-en="My role">Moja rola</span>
+                            <p data-en="I designed and built an AI agent in RAG architecture, using Langflow as the orchestration platform. I organized and prepared the knowledge base so the agent could effectively search and contextualize it. I defined the agent's behavior: how it responds, what questions it handles, when it refers to sources. I tested it with the team, iterating prompts and the database structure based on real questions arising in daily product work.">Zaprojektowałem i zbudowałem agenta AI w architekturze RAG, wykorzystując Langflow jako platformę do orkiestracji. Uporządkowałem i przygotowałem bazę wiedzy tak, żeby agent mógł ją efektywnie przeszukiwać i kontekstualizować. Zdefiniowałem zachowanie agenta: jak odpowiada, na jakie pytania reaguje, kiedy odsyła do źródeł. Testowałem go z zespołem, iterując prompty i strukturę bazy na podstawie realnych pytań pojawiających się w codziennej pracy produktowej.</p>
+                            <span class="pce-para-label" data-en="Results">Efekty</span>
+                            <ul class="pce-list">
+                                <li data-en="The team gained a single place to ask questions about users, competition, and past product decisions.">Zespół zyskał jedno miejsce, w którym może zadawać pytania o użytkowników, konkurencję i wcześniejsze decyzje produktowe.</li>
+                                <li data-en="I shortened the time it takes to reach key information from research and analyses.">Skróciłem czas dotarcia do kluczowych informacji z badań i analiz.</li>
+                                <li data-en="I reduced the team's dependency on one person as the sole source of project knowledge.">Zmniejszyłem zależność zespołu od jednej osoby jako jedynego źródła wiedzy o projekcie.</li>
+                                <li data-en="I demonstrated to the team the practical value of AI in daily work — as concrete support in decision-making, not abstract technology.">Pokazałem zespołowi praktyczną wartość AI w codziennej pracy, jako konkretne wsparcie w podejmowaniu decyzji, nie abstrakcyjną technologię.</li>
+                            </ul>
+                        </div>
+                        <div class="pce-visual">
+                            <svg class="pce-robot" viewBox="0 0 56 56" width="160" height="160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="icon-robot-title">
+                                <title id="icon-robot-title">Robot — AI automatyzacja</title>
+                                <rect class="icon-part" x="7" y="13" width="42" height="33" rx="8"/>
+                                <line class="icon-part" x1="28" y1="8" x2="28" y2="13"/>
+                                <circle class="icon-part" cx="28" cy="5" r="3"/>
+                                <path class="icon-part" d="M 7,22 Q 1,29 7,36"/>
+                                <path class="icon-part" d="M 49,22 Q 55,29 49,36"/>
+                                <circle class="icon-part" cx="19" cy="26" r="5.5"/>
+                                <circle class="icon-part" cx="37" cy="26" r="5.5"/>
+                                <line class="icon-part" x1="21" y1="38" x2="35" y2="38"/>
+                                <circle class="robot-eye" cx="19" cy="26" r="2"/>
+                                <circle class="robot-eye" cx="37" cy="26" r="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pce dot-ornament">
+                <button class="pce-header" aria-expanded="false" data-card="email-redesign">
+                    <span class="pce-title" data-en="Redesigning the email service and the SSO service">Przeprojektowanie serwisu pocztowego i usługi SSO</span>
+                    <span class="pce-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="4,7 10,13 16,7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="pce-body">
+                    <div class="pce-body-inner pce-body-inner--visual">
+                        <div class="pce-body-text">
+                            <span class="pce-para-label" data-en="Challenge">Wyzwanie</span>
+                            <p data-en="As part of a newly formed UX team, we were tasked with redesigning an email service actively used by about 8 million people. The goal was modernization, alignment with other organizational products, and improving user satisfaction. In parallel, our team faced a multi-account single sign-on service whose complexity caused real problems. For example, users accidentally deleted their accounts or lost access after enabling two-factor authentication.">W ramach nowo powstałego zespołu UX otrzymaliśmy zadanie przeprojektowania serwisu poczty email, z którego aktywnie korzystało około 8 milionów osób. Celem była modernizacja, uspójnienie z innymi produktami organizacji i poprawa satysfakcji użytkowników. Równolegle na nasz zespół czekała usługa multikonta typu single sign-on, której złożoność powodowała realne problemy. Przykładowo, użytkownicy niechcący usuwali sobie konta lub tracili do nich dostęp w wyniku włączenia logowania dwustopniowego.</p>
+                            <span class="pce-para-label" data-en="My role">Moja rola</span>
+                            <p data-en="I participated in rebuilding the entire information architecture of the service. I redesigned email folders, simplifying the division into important and less important messages. I designed a new search engine with filters. I designed mobile payments from scratch. I co-created user communications and planned deployment sequences with the management team. In the SSO service, I redesigned two-factor authentication, account deletion, and external service registration, breaking complex flows into simpler, safer steps. I also co-created or reviewed other projects going through our team, helping iterate on them.">Uczestniczyłem w przebudowie architektury informacji całego serwisu. Przeprojektowałem segregatory pocztowe, upraszczając podział na ważne i mniej ważne wiadomości. Zaprojektowałem nową wyszukiwarkę z filtrami. Od zera zaprojektowałem płatności w aplikacji mobilnej. Współtworzyłem komunikację do użytkowników i planowałem kolejność wdrożeń z zespołem zarządczym. W usłudze SSO przeprojektowałem proces logowania dwustopniowego, usuwania konta i rejestracji w serwisach zewnętrznych, rozbijając skomplikowane ścieżki na prostsze, bezpieczniejsze kroki. Współtworzyłem lub opiniowałem również inne projekty przechodzące przez nasz zespół, pomagając je iterować.</p>
+                            <span class="pce-para-label" data-en="Results">Efekty</span>
+                            <ul class="pce-list">
+                                <li data-en="Together with the team, we redesigned two email services and the SSO service across all product versions, reducing maintenance costs by simplifying the interfaces.">Wraz z zespołem przeprojektowaliśmy dwa serwisy pocztowe i usługę SSO, we wszystkich wersjach tych produktów, zmniejszając koszty utrzymania poprzez uproszczenie interfejsów.</li>
+                                <li data-en="I reduced user difficulties in finding messages by redesigning folders and the search system.">Zredukowałem trudności użytkowników w znajdowaniu wiadomości, przeprojektowując segregatory i system wyszukiwania.</li>
+                                <li data-en="I contributed to launching a new revenue stream by designing mobile payments in the app.">Przyczyniłem się do uruchomienia nowego strumienia przychodów, projektując płatności mobilne w aplikacji.</li>
+                                <li data-en="I cut the time required for two-factor authentication processes in half.">Skróciłem o połowę czas wymagany do procesów uwierzytelniania dwuskładnikowego.</li>
+                                <li data-en="I reduced accidental account deletions by 30%.">Zmniejszyłem liczbę przypadkowych usunięć kont o 30%.</li>
+                            </ul>
+                        </div>
+                        <div class="pce-visual">
+                            <svg class="pce-photo" viewBox="0 0 56 56" width="160" height="160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="icon-photo-title">
+                                <title id="icon-photo-title">Zdjęcie — redesign</title>
+                                <!-- Photo frame rectangle -->
+                                <rect class="icon-part" x="12" y="5" width="40" height="40" rx="2"/>
+                                <!-- Mountain / landscape triangle -->
+                                <polygon class="icon-part" points="24,10 4,51 48,51"/>
+                                <!-- Golden sun circle -->
+                                <circle class="photo-sun" cx="40" cy="19" r="7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pce dot-ornament">
+                <button class="pce-header" aria-expanded="false" data-card="evaluation-method">
+                    <span class="pce-title" data-en="Product idea evaluation method">Metoda oceny pomysłów produktowych</span>
+                    <span class="pce-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="4,7 10,13 16,7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="pce-body">
+                    <div class="pce-body-inner pce-body-inner--visual">
+                        <div class="pce-body-text">
+                            <span class="pce-para-label" data-en="Challenge">Wyzwanie</span>
+                            <p data-en="There were more ideas for developing the email service than development resources. The team needed a prioritization method based on research and analysis knowledge, rather than voting and intuition. There was also no single place where all ideas and the knowledge to support decisions were gathered.">Pomysłów na rozwój serwisu pocztowego było więcej niż zasobów deweloperskich. Zespół potrzebował sposobu na priorytetyzację, który będzie oparty na wiedzy z badań i analiz, zamiast na głosowaniu i intuicji. Brakowało też jednego miejsca, w którym zebrane byłyby wszystkie pomysły i wiedza, na której można oprzeć decyzję.</p>
+                            <span class="pce-para-label" data-en="My role">Moja rola</span>
+                            <p data-en="I created a UX repository combining research and analysis results with ideas for new projects. I generate ideas with the team through How Might We workshops. I conducted over 10 of them, each delivering dozens of improvement proposals. On this basis, I designed and implemented a scoring method based on five criteria: basic user needs, loyalty factors, market and competitive position, implementation costs, and potential revenue. I adjust the criteria weights to current business goals. I feed the method with data from the experience radar, market analyses, competitive monitoring, and surveys.">Stworzyłem repozytorium UX, łączące wyniki badań i analiz z pomysłami na nowe projekty. Pomysły generuję z zespołem na warsztatach How Might We. Przeprowadziłem ich ponad 10, każdy dostarczający dziesiątki propozycji usprawnień. Na tej bazie zaprojektowałem i wdrożyłem metodę scoringową opartą na pięciu kryteriach: podstawowe potrzeby użytkowników, czynniki lojalizujące, pozycja rynkowa i konkurencyjna, koszty wdrożenia oraz potencjalne przychody. Wagi kryteriów dostosowuję do aktualnych celów biznesowych. Metodę zasilam danymi z radaru doświadczeń, analiz rynku, monitoringu konkurencji i badań ankietowych.</p>
+                            <span class="pce-para-label" data-en="Results">Efekty</span>
+                            <ul class="pce-list">
+                                <li data-en="I created and maintain a UX repository giving the team constant access to knowledge about users and the market.">Stworzyłem i utrzymuję repozytorium UX, dające zespołowi stały dostęp do wiedzy o użytkownikach i rynku.</li>
+                                <li data-en="I conducted over 10 ideation workshops that generated dozens of service improvement ideas.">Przeprowadziłem ponad 10 warsztatów ideacyjnych, które wygenerowały dziesiątki pomysłów na usprawnienia serwisu.</li>
+                                <li data-en="I designed and implemented a project evaluation method that replaced intuitive prioritization with a data-driven process.">Zaprojektowałem i wdrożyłem metodę oceny projektów, która zastąpiła intuicyjną priorytetyzację procesem opartym na danych.</li>
+                                <li data-en="I delivered over 100 key observations that contributed to design and business decisions.">Dostarczyłem ponad 100 kluczowych obserwacji, które przyczyniły się do decyzji projektowych i biznesowych.</li>
+                            </ul>
+                        </div>
+                        <div class="pce-visual">
+                            <svg class="pce-crosshair" viewBox="0 0 56 56" width="160" height="160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="icon-crosshair-title">
+                                <title id="icon-crosshair-title">Celownik — ewaluacja</title>
+                                <circle class="icon-part" cx="28" cy="28" r="20"/>
+                                <circle class="icon-part" cx="28" cy="28" r="12"/>
+                                <line class="icon-part" x1="28" y1="2" x2="28" y2="8"/>
+                                <line class="icon-part" x1="28" y1="48" x2="28" y2="54"/>
+                                <line class="icon-part" x1="2" y1="28" x2="8" y2="28"/>
+                                <line class="icon-part" x1="48" y1="28" x2="54" y2="28"/>
+                                <circle class="crosshair-accent" cx="28" cy="28" r="4"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+    
+
+    <!-- 5. Zaufali mi -->
+    <section class="trusted" id="trusted">
         <div class="container">
-            <h2 data-aos="fade-up">They trusted&nbsp;me</h2>
-        </div>
-        
-        <div class="logos-container" data-aos="fade-up">
-            <div class="logos-grid">
-                <img src="images/logo-wppoczta.png" alt="WP Poczta logo">
-                <img src="images/logo-o2poczta.png" alt="Poczta O2 logo">
-                <img src="images/logo-wpkonto.png" alt="WP Konto logo">
-                <img src="images/logo-superauto.png" alt="Superauto.pl logo">
-                <img src="images/logo-arris.png" alt="Arris agency logo">
+            <h2 data-en="Trusted&nbsp;by">Zaufali&nbsp;mi</h2>
+
+            <div class="logos-container dot-ornament">
+                <div class="logos-grid">
+                    <img src="images/logo-wppoczta.webp" alt="WP Poczta logo" loading="lazy">
+                    <img src="images/logo-o2poczta.webp" alt="Poczta O2 logo" loading="lazy">
+                    <img src="images/logo-wpkonto.webp" alt="WP Konto logo" loading="lazy">
+                    <span class="logos-break"></span>
+                    <img src="images/logo-superauto.webp" alt="Superauto.pl logo" loading="lazy">
+                    <img src="images/logo-arris.webp" alt="Arris agency logo" loading="lazy">
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- 6. Kontakt -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 data-aos="fade-up">Let's get in&nbsp;touch</h2>
-            <p class="contact-intro" data-aos="fade-up" data-aos-delay="100">Looking for&nbsp;an experienced researcher and&nbsp;designer? If&nbsp;you think I&nbsp;am a&nbsp;match for&nbsp;your team, feel free to&nbsp;contact&nbsp;me.</p>
-            
-            <div class="contact-methods" data-aos="fade-up" data-aos-delay="200">
-                <div class="contact-item">
-                    <p class="contact-label">Call&nbsp;me:</p>
-                    <a href="tel:+48539101507" data-umami-event="contact-phone">+48&nbsp;539&nbsp;101&nbsp;507</a>
-                </div>
-                
-                <div class="contact-item">
-                    <p class="contact-label">Mail&nbsp;me:</p>
-                    <a href="mailto:hello@lukaszduda.eu" data-umami-event="contact-email">hello@lukaszduda.eu</a>
-                </div>
-                
-                <div class="contact-item">
-                    <p class="contact-label">Text&nbsp;me:</p>
-                    <a href="https://www.linkedin.com/in/lukaux/" target="_blank" data-umami-event="contact-linkedin">LinkedIn</a>
+            <h2 data-en="Let's talk">Porozmawiajmy</h2>
+            <div class="contact-body">
+                <p class="contact-intro" data-en="Interested in working together? I'm available for teams that want to base their product development on data. I'd love to talk about your needs and what I can do for you.">Zainteresowała Cię współpraca? Jestem do dyspozycji dla zespołów, które chcą oprzeć rozwój swoich produktów na danych. Chętnie porozmawiam o Twoich potrzebach i o tym, co mogę dla Ciebie zrobić.</p>
+                <div class="cb-links">
+                    <a href="tel:+48539101507" class="cb-link" data-umami-event="contact-phone">
+                        <span class="cb-link-label" data-en="Call me">Zadzwoń do mnie</span>
+                        <span class="cb-link-value">+48&nbsp;539&nbsp;101&nbsp;507</span>
+                    </a>
+                    <a href="mailto:hello@lukaszduda.eu" class="cb-link" data-umami-event="contact-email">
+                        <span class="cb-link-label" data-en="Email me">Napisz mejla</span>
+                        <span class="cb-link-value">hello@lukaszduda.eu</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lukaux/" class="cb-link" target="_blank" rel="noopener noreferrer" data-umami-event="contact-linkedin">
+                        <span class="cb-link-label" data-en="Message me">Napisz na LinkedIn</span>
+                        <span class="cb-link-value">linkedin.com/in/lukaux</span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
+    </main>
+
+    <!-- 8. Footer -->
     <footer class="footer">
         <div class="container">
-            <p data-aos="fade-up">Have a&nbsp;lovely&nbsp;day!<br>Łukasz&nbsp;Duda, 2026</p>
+            <p data-en="Have a&nbsp;lovely day!<br>Łukasz&nbsp;Duda, 2026">Miłego dnia!<br>Łukasz&nbsp;Duda, 2026</p>
         </div>
     </footer>
-    
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 400,
-            easing: 'ease-out',
-            once: true,
-            offset: 50
-        });
-    </script>
-    <script src="js/script.js"></script>
+
+<script src="js/script.js"></script>
 </body>
 </html>
